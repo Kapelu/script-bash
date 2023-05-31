@@ -1,0 +1,92 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  
+
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+body {
+  
+}
+
+ */
+/*$ Reseteo de Paul Irish*/
+
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-color: #f7df1e;
+  --second-color: #222;
+  --main-modal-color: rgba(247, 222, 30, 0.85);
+  --second-modal-color: rgba(34, 34, 34, 0.85);
+  --container-width: 1200px;
+  
+  color-scheme: light dark;
+  color: #ffffffde;
+  background-color: #414141;
+  
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--font-size);
+  font-family: var(--main-font);
+  scroll-behavior: smooth; /*$ Le da el efecto de transicion de una seccion a otra */
+}
+*,
+*::after,
+*::before {box-sizing: inherit;}
+
+/*$ Elimina ScroolBar Lateral */
+::-webkit-scrollbar {width: 0px;}
+::-webkit-scrollbar-track {background: #fff;}
+::-webkit-scrollbar-thumb {background: #fff;}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden; /*$ Todo lo que se desborde en horizantal, se oculte */
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+img {
+  /*$ Imagenes que se adapten a la maxima anchura de su contenedor */
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/*$ Establece el tema de la pagina light/dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #0e2438;
+    background-color: #ffffff;
+  }
+}
