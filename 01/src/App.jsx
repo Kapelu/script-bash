@@ -1,6 +1,8 @@
 import viteLogo from './assets/img/vite.svg'
 import reactLogo from './assets/img/react.svg'
 import './style/App.css'
+import Componente from './component/Componente'
+
 
 function App() {
 	return (
@@ -16,9 +18,10 @@ function App() {
 				</div>
 				<h1>React + Vite</h1>
 			</header>
-			<main className='main'>
-				<h4>Ejercicios de React</h4>
-			</main>
+			<hr /><br />
+			<section>
+				<Componente msg='Hola soy un componente funcional desde una prop'/>
+			</section>
 		</>
 	)
 }
