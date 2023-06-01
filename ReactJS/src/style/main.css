@@ -93,6 +93,11 @@ img {
 }
 
 
+li{
+  align-items: center;
+  text-align: left;  
+}
+
 
 
 /*$ Establece el tema de la pagina light/dark */

@@ -6,7 +6,7 @@ const Componente = props => {
     return(
     <>
     <p>{props.msg}</p>
-    <br />
+    <br /><br /><br /><br /><br /><br /><br />
     <img src={img} alt="kapelu" />
     </>
     )

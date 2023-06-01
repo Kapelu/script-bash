@@ -15,7 +15,7 @@ const  Propiedades = (props)=>{
 }
 
 Propiedades.defaultProps ={
-    porDefecto:'Propiedades por defecto'
+    porDefecto:'Esta es una propiedad por defecto usando la propiedad "defaultProps" '
 }
 
 export default Propiedades
