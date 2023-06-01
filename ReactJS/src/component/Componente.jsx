@@ -1,7 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
+import img from '../assets/img/bg.png'
 
 //$ Componente funcion expresada
-const Componente = props => <h2>{props.msg}</h2>
+const Componente = props => {
+    return(
+    <>
+    <p>{props.msg}</p>
+    <br />
+    <img src={img} alt="kapelu" />
+    </>
+    )
+
+}
 
 
 //$ Componete funcion declarada
