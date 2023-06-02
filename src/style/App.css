@@ -1,8 +1,8 @@
 #root {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: rem;
-  text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: rem;
+	text-align: center;
 }
 
 /*$ **********  Menú Hamburguesa  **********  */
@@ -139,18 +139,11 @@
 	justify-content: center;
 	align-items: center;
 	overflow-y: auto;
-	background-color: var(--second-modal-color);
+	background-color: #272727;
 	opacity: 0;
 	visibility: hidden;
 	transition: transform 0.8s ease, opacity 0.5s ease;
-	/* De arriba */
-	/* transform: translate(0, -100%); */
-	/* De abajo */
 	transform: translate(0, 100%);
-	/* De la derecha */
-	/* transform: translate(100%, 0); */
-	/* De la izquierda */
-	/* transform: translate(-100%, 0); */
 }
 
 .panel.is-active {
@@ -199,46 +192,39 @@
 	background-color: var(--main-modal-color);
 }
 
-
 .logo {
-  height: 3rem;
-  padding: .5rem;
-  transition: filter 30ms;
+	height: 3rem;
+	padding: 0.5rem;
+	transition: filter 30ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2rem #646cffaa);
+	filter: drop-shadow(0 0 2rem #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2rem #61dafbaa);
+	filter: drop-shadow(0 0 2rem #61dafbaa);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(1) .logo {
-    animation: logo-spin infinite 10s linear;
-  }
+	a:nth-of-type(1) .logo {
+		animation: logo-spin infinite 10s linear;
+	}
 }
 
-.header{
-  position: sticky;
+.header {
+	position: sticky;
 }
-.main{
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #5f5c5c;
+.main {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100vh;
+	background-color: #5f5c5c;
 }
-
-
-
-
-
-

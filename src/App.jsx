@@ -3,6 +3,7 @@ import reactLogo from './assets/img/react.svg'
 import './style/App.css'
 import Componente from './component/Componente'
 import Propiedades from './component/Propiedades'
+import Estado from './component/Estado'
 
 function App() {
 	return (
@@ -25,9 +26,14 @@ function App() {
 				<nav className='menu'>
 					<a href='#seccion1'>Componentes</a>
 					<a href='#seccion2'>Propiedades</a>
-					<a href='#seccion3'>Sección 3</a>
-					<a href='#seccion4'>Sección 4</a>
-					<a href='#seccion5'>Sección 5</a>
+					<a href='#seccion3'>Estado</a>
+					<a href='#seccion4'>Sección </a>
+					<a href='#seccion5'>Sección xx</a>
+					<a href='#seccion6'>Sección xx</a>
+					<a href='#seccion7'>Sección xx</a>
+					<a href='#seccion8'>Sección xx</a>
+					<a href='#seccion9'>Sección xx</a>
+					<a href='#seccion10'>Sección xx</a>
 				</nav>
 			</aside>
 			<main>
@@ -58,9 +64,11 @@ function App() {
 				</section>
 				<section id='seccion3' className='section'>
 					<h2>
-						<u>Sección</u>
+						<u>Estado</u>
 					</h2>
-					<div className='contenido'></div>
+					<div className='contenido'>
+						<Estado />
+					</div>
 				</section>
 				<section id='seccion4' className='section'>
 					<h2>
@@ -69,6 +77,36 @@ function App() {
 					<div className='contenido'></div>
 				</section>
 				<section id='seccion5' className='section'>
+					<h2>
+						<u>Sección</u>
+					</h2>
+					<div className='contenido'></div>
+				</section>
+				<section id='seccion6' className='section'>
+					<h2>
+						<u>Sección</u>
+					</h2>
+					<div className='contenido'></div>
+				</section>
+				<section id='seccion7' className='section'>
+					<h2>
+						<u>Sección</u>
+					</h2>
+					<div className='contenido'></div>
+				</section>
+				<section id='seccion8' className='section'>
+					<h2>
+						<u>Sección</u>
+					</h2>
+					<div className='contenido'></div>
+				</section>
+				<section id='seccion9' className='section'>
+					<h2>
+						<u>Sección</u>
+					</h2>
+					<div className='contenido'></div>
+				</section>
+				<section id='seccion10' className='section'>
 					<h2>
 						<u>Sección</u>
 					</h2>

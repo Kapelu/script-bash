@@ -1,13 +1,11 @@
 import React from 'react'
-import img from '../assets/img/bg.png'
 
 //$ Componente funcion expresada
 const Componente = props => {
     return(
     <>
     <p>{props.msg}</p>
-    <br /><br /><br /><br /><br /><br /><br />
-    <img src={img} alt="kapelu" />
+    <br /><br /><br />
     </>
     )
 
