@@ -4,6 +4,7 @@ import './style/App.css'
 import Componente from './component/Componente'
 import Propiedades from './component/Propiedades'
 import Estado from './component/Estado'
+import AjaxApis from './component/AjaxApis'
 
 function App() {
 	return (
@@ -27,13 +28,7 @@ function App() {
 					<a href='#seccion1'>Componentes</a>
 					<a href='#seccion2'>Propiedades</a>
 					<a href='#seccion3'>Estado</a>
-					<a href='#seccion4'>Sección </a>
-					<a href='#seccion5'>Sección xx</a>
-					<a href='#seccion6'>Sección xx</a>
-					<a href='#seccion7'>Sección xx</a>
-					<a href='#seccion8'>Sección xx</a>
-					<a href='#seccion9'>Sección xx</a>
-					<a href='#seccion10'>Sección xx</a>
+					<a href='#seccion4'>Peticiones Asincronas </a>
 				</nav>
 			</aside>
 			<main>
@@ -42,6 +37,7 @@ function App() {
 						<u>Componentes</u>
 					</h2>
 					<div className='contenido'>
+						<br />
 						<Componente msg='Hola soy un componente funcional desde una prop' />
 					</div>
 				</section>
@@ -50,6 +46,7 @@ function App() {
 						<u>Propiedades</u>
 					</h2>
 					<div className='contenido'>
+						<br />
 						<Propiedades
 							cadena='Esto es una cadena de texto'
 							numero={9}
@@ -67,50 +64,18 @@ function App() {
 						<u>Estado</u>
 					</h2>
 					<div className='contenido'>
+						<br />
 						<Estado />
 					</div>
 				</section>
 				<section id='seccion4' className='section'>
 					<h2>
-						<u>Sección</u>
+						<u>Peticiones Asincronas</u>
 					</h2>
-					<div className='contenido'></div>
-				</section>
-				<section id='seccion5' className='section'>
-					<h2>
-						<u>Sección</u>
-					</h2>
-					<div className='contenido'></div>
-				</section>
-				<section id='seccion6' className='section'>
-					<h2>
-						<u>Sección</u>
-					</h2>
-					<div className='contenido'></div>
-				</section>
-				<section id='seccion7' className='section'>
-					<h2>
-						<u>Sección</u>
-					</h2>
-					<div className='contenido'></div>
-				</section>
-				<section id='seccion8' className='section'>
-					<h2>
-						<u>Sección</u>
-					</h2>
-					<div className='contenido'></div>
-				</section>
-				<section id='seccion9' className='section'>
-					<h2>
-						<u>Sección</u>
-					</h2>
-					<div className='contenido'></div>
-				</section>
-				<section id='seccion10' className='section'>
-					<h2>
-						<u>Sección</u>
-					</h2>
-					<div className='contenido'></div>
+					<div className='contenido'>
+						<br />
+						<AjaxApis />
+					</div>
 				</section>
 			</main>
 		</>
