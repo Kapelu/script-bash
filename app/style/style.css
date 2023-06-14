@@ -100,7 +100,7 @@ aside {
 	background-color: var(--second-color);
 	left: 0px;
 	top: 5.1rem;
-	bottom: 0;
+	bottom: 30px;
 	overflow: auto;
 	border-radius: 0 20px 20px 0;
 }
@@ -133,7 +133,6 @@ main {
 	margin-left: 200px;
 	left: 0px;
 	top: 7rem;
-	bottom: 0;
 	overflow: auto;
 }
 
