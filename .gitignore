@@ -16,6 +16,7 @@
 /build
 
 # misc
+.gitignore
 .DS_Store
 *.pem
 
