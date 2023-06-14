@@ -1,4 +1,4 @@
-import './style/global.css'
+import './style/style.css'
 import Header from './component/Header.jsx'
 import Sidebar from './component/Sidebar.jsx'
 
@@ -16,11 +16,13 @@ export default function RootLayout({children}) {
 			<body>
 				<div>
 					<Header />
+					
 					<div>
 						<Sidebar />
 						<main>{children}</main>
 					</div>
 				</div>
+				<script src="./component/index.js" type="module"></script>
 			</body>
 		</html>
 	)

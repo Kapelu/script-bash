@@ -66,7 +66,7 @@ header {
 	margin: 0;
 	padding: 0;
 	z-index: 999;
-	background-color: var(--first-color);
+	background-color: var(--third-color);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -102,6 +102,7 @@ aside {
 	top: 5.1rem;
 	bottom: 0;
 	overflow: auto;
+	border-radius: 0 20px 20px 0;
 }
 
 aside a {
@@ -142,11 +143,6 @@ h1 {
 	color: var(--white-light);
 }
 
-/*
-$ *************************************************************
-$ ********************   Sección SECTION   ********************
-$ *************************************************************
-*/
 .seccion {
 	margin: 0;
 	padding: 0;
@@ -171,5 +167,5 @@ $ *************************************************************
 	padding: 0rem 3rem 0.5rem 3rem;
 	text-align: justify;
 	color: var(--white-light);
-	line-height: 1.5rem;
+	line-height: 1.6rem;
 }
