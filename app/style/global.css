@@ -1,15 +1,15 @@
 :root {
 	--main-font: sans-serif;
 	--font-size: 16px;
-	--first-color: #359FCA;
+	--first-color: #359fca;
 	--first-modal-color: rgba(53, 160, 202, 0.75);
 	--second-color: #23272f;
 	--second-modal-color: rgba(35, 39, 47, 0.75);
-	--third-color:#808080;
+	--third-color: #808080;
 	--third-modal-color: rgba(128, 128, 128, 0.75);
-	--black_light:rgba(0, 0, 0, 0.75);
-	--grey-light:#aaa;
-	--white-light:rgba(255, 255, 255, 0.75);
+	--black_light: rgba(0, 0, 0, 0.75);
+	--grey-light: #aaa;
+	--white-light: rgba(255, 255, 255, 0.75);
 	--container-width: 1200px;
 }
 /* 
@@ -29,10 +29,16 @@ html {
 	font-family: var(--main-font);
 	scroll-behavior: smooth; /*$ Le da el efecto de transicion de una seccion a otra */
 }
-*,*::after,*::before {box-sizing: inherit;}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
 
 /*$ Elimina ScroolBar Lateral */
-::-webkit-scrollbar {width: 0px;}
+::-webkit-scrollbar {
+	width: 0px;
+}
 /* 
 ::-webkit-scrollbar-track {background: #fff;}
 ::-webkit-scrollbar-thumb {background: #fff;} 
@@ -40,14 +46,7 @@ html {
 
 body {
 	margin: 0;
-	overflow-x: hidden; /*$ Todo lo que se desborde en horizantal, se oculte */
-	
-}
-
-main {
-	flex: 1;
-	padding: 20px;
-	margin-left: 200px;
+	background: var(--third-color);
 }
 
 img {
@@ -55,7 +54,6 @@ img {
 	width: 100%;
 	height: auto;
 }
-
 
 /*
 $ ************************************************************
@@ -67,25 +65,26 @@ header {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	z-index: 999;	
+	z-index: 999;
 	background-color: var(--first-color);
 	display: flex;
-	justify-content:space-between;
+	justify-content: space-between;
 	align-items: center;
 }
 
 .logo-react {
 	display: flex;
 	width: 35%;
+	height: auto;
 	margin: auto;
 }
 
 .daniel-calderon {
 	display: flex;
-    border-radius: 50px;
-	display: flex;
-	width: 35%;
+	width: 32%;
+	height: auto;
 	margin: auto;
+	border-radius: 100%;
 }
 
 /*
@@ -100,17 +99,17 @@ aside {
 	width: 200px;
 	background-color: var(--second-color);
 	left: 0px;
-	top: 4.9rem;
+	top: 5.1rem;
 	bottom: 0;
 	overflow: auto;
 }
 
 aside a {
 	text-decoration: none;
-	padding: .5rem 1rem;
-	margin: .25rem;
+	padding: 0.5rem 1rem;
+	margin: 0.25rem;
 	border: 1px solid var(--second-color);
-	border-radius: .5rem;
+	border-radius: 0.5rem;
 	color: var(--white-light);
 	background: var(--second-color);
 }
@@ -126,9 +125,11 @@ $ **********************************************************
 $ ********************   Sección MAIN   ********************
 $ **********************************************************
 */
-main{
+main {
 	background: var(--third-color);
+	max-width: 100%;
 	padding-top: 5rem;
+	margin-left: 200px;
 	left: 0px;
 	top: 7rem;
 	bottom: 0;
@@ -138,33 +139,37 @@ main{
 h1 {
 	font-size: 2rem;
 	text-align: center;
+	color: var(--white-light);
 }
 
-
-
-
-
-
-/* imagenes */
-
-
-
-
-
-
-
-
-
-/* 
-.layout-container {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-.content-container {
-	display: flex;
-	flex: 1; 
-	overflow: auto; 
-}
+/*
+$ *************************************************************
+$ ********************   Sección SECTION   ********************
+$ *************************************************************
 */
+.seccion {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	box-sizing: inherit;
+	/*border-color: 5px solid #23272f;*/
+}
+.titulo {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	text-align: center;
+	color: var(--white-light);
+}
+
+.descripcion {
+	margin: 0;
+	padding: 0rem 3rem 0.5rem 3rem;
+	text-align: justify;
+	color: var(--white-light);
+	line-height: 1.5rem;
+}

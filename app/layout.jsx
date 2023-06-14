@@ -1,9 +1,6 @@
-/* import {Inter} from 'next/font/google' */
 import './style/global.css'
-import Header from './component/Header'
-import Sidebar from './component/Sidebar'
-
-/* const inter = Inter({subsets: ['latin']}) */
+import Header from './component/Header.jsx'
+import Sidebar from './component/Sidebar.jsx'
 
 export const metadata = {
 	title: 'Create React App',
@@ -17,9 +14,9 @@ export default function RootLayout({children}) {
 				<meta charSet='UTF-8' />
 			</head>
 			<body>
-				<div className='layout-container'>
+				<div>
 					<Header />
-					<div className='content-container'>
+					<div>
 						<Sidebar />
 						<main>{children}</main>
 					</div>
