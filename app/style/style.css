@@ -63,7 +63,7 @@ $ ************************************************************
 header {
 	position: fixed;
 	width: 100%;
-	margin: 0;
+	margin: 0 0 2rem 0;
 	padding: 0;
 	z-index: 999;
 	background-color: var(--third-color);
@@ -129,10 +129,10 @@ $ **********************************************************
 main {
 	background: var(--third-color);
 	max-width: 100%;
-	padding-top: 5rem;
+	padding-top: 2rem;
 	margin-left: 200px;
 	left: 0px;
-	top: 7rem;
+	top: 15rem;
 	overflow: auto;
 }
 
@@ -149,7 +149,7 @@ h1 {
 }
 
 .contenedor {
-	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	padding: 2.5rem 0.5rem 0.5rem 0.5rem;
 	box-sizing: inherit;
 	/*border-color: 5px solid #23272f;*/
 }
