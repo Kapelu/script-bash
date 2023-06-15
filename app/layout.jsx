@@ -1,4 +1,5 @@
 import './style/style.css'
+/* import Link from 'next/link' */
 import Header from './component/Header.jsx'
 import Sidebar from './component/Sidebar.jsx'
 
@@ -12,17 +13,27 @@ export default function RootLayout({children}) {
 		<html lang='es'>
 			<head>
 				<meta charSet='UTF-8' />
+				{/* <Link rel='preconnect' href='https://fonts.googleapis.com' />
+				<Link
+					rel='preconnect'
+					href='https://fonts.gstatic.com'
+					crossorigin
+				/>
+				<Link
+					href='https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'
+					rel='stylesheet'
+				/> */}
 			</head>
 			<body>
 				<div>
 					<Header />
-					
+
 					<div>
 						<Sidebar />
 						<main>{children}</main>
 					</div>
 				</div>
-				<script src="./component/index.js" type="module"></script>
+				<script src='./component/index.js' type='module'></script>
 			</body>
 		</html>
 	)
