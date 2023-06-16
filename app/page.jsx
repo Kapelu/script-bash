@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from 'next/image'
 
 export default function Home() {
 	return (
@@ -44,10 +44,123 @@ export default function Home() {
 						desarrolladores la emplean para incrustar código HTML en
 						objetos JavaScript. Ya que JSX acepta expresiones
 						válidas de JavaScript e incrustación de funciones, puede
-						simplificar las estructuras de código compleja
+						simplificar las estructuras de código compleja.
+						<br />
+						Veamos un bloque de código que muestra cómo incrustar
+						una expresión en JSX: const name = 'John Smith;
+						{/* 
+						const element = h1>Hola, {nombre}/h1>
+                        ReactDOM.render(element,document.getElementById('root'))
+						*/}
 					</p>
-					<Image className="imagen" src='/assets/codigo/home-caracteristica-jsx.png' width={100} height={100} alt="React"/>
 
+					<p className='descripcion'>
+						En la segunda línea, llamamos a la variable nombre
+						dentro de un elemento React poniéndola dentro de las
+						llaves.
+						<br />
+						Mientras tanto, la función ReactDOM.render() renderiza
+						el elemento React en el árbol del Modelo de Objetos del
+						Documento (DOM), describiendo la UI.
+						<br />
+						JSX también ayuda a combatir los ataques Cross-Site
+						Scripting (XSS). Por defecto, React DOM convierte los
+						valores incrustados en JSX en cadenas antes de
+						renderizarlos. Por consiguiente, terceros no pueden
+						inyectar código extra a través de la entrada del usuario
+						a menos que esté explícitamente escrito en la
+						aplicación.
+						<br />
+						Más adelante en el artículo, discutiremos detalladamente
+						el papel de JSX en la creación de componentes React.
+					</p>
+					<h2 className='subtitulo'>👉 Virtual DOM</h2>
+					<p className='descripcion'>
+						El Modelo de Objetos del Documento (DOM) presenta una
+						página web en una estructura de árbol de datos. ReactJS
+						almacena árboles DOM virtuales en la memoria. Al
+						hacerlo, React puede aplicar actualizaciones a partes
+						específicas del árbol de datos, lo que es más rápido que
+						volver a renderizar la totalidad del árbol DOM.
+						<br />
+						Cada vez que haya un cambio en los datos, ReactJS
+						generará un nuevo árbol de DOM virtual y lo comparará
+						con el anterior para encontrar la forma más rápida de
+						implementar los cambios en el DOM real. Este proceso se
+						conoce como diffing.
+						<br />
+						Al asegurarse de que la manipulación de la interfaz de
+						usuario sólo afecta a secciones específicas del árbol
+						real del DOM, renderizar la versión actualizada tarda
+						menos tiempo y utiliza menos recursos. Esta práctica
+						beneficia enormemente a los proyectos grandes con una
+						interacción intensa con el usuario.
+						<br />
+					</p>
+					<h2 className='subtitulo'>👉 Virtual DOM</h2>
+					<p className='descripcion'>
+						El Modelo de Objetos del Documento (DOM) presenta una
+						página web en una estructura de árbol de datos. ReactJS
+						almacena árboles DOM virtuales en la memoria. Al
+						hacerlo, React puede aplicar actualizaciones a partes
+						específicas del árbol de datos, lo que es más rápido que
+						volver a renderizar la totalidad del árbol DOM.
+						<br />
+						Cada vez que haya un cambio en los datos, ReactJS
+						generará un nuevo árbol de DOM virtual y lo comparará
+						con el anterior para encontrar la forma más rápida de
+						implementar los cambios en el DOM real. Este proceso se
+						conoce como diffing.
+						<br />
+						Al asegurarse de que la manipulación de la interfaz de
+						usuario sólo afecta a secciones específicas del árbol
+						real del DOM, renderizar la versión actualizada tarda
+						menos tiempo y utiliza menos recursos. Esta práctica
+						beneficia enormemente a los proyectos grandes con una
+						interacción intensa con el usuario.
+					</p>
+					<h2 className='subtitulo'>👉 Componentes y Props</h2>
+					<p className='descripcion'>
+						ReactJS divide la interfaz de usuario en piezas aisladas
+						y reutilizables de código conocidas como componentes.
+						Los componentes de React funcionan de forma similar a
+						las funciones de JavaScript, ya que aceptan entradas
+						arbitrarias denominadas propiedades o props. Los
+						elementos React devueltos determinan el aspecto de la
+						interfaz de usuario en el lado del cliente. Este es un
+						ejemplo de un componente de función que devuelve un
+						elemento React:
+						{/* 
+						function Welcome(props) {
+							return h1> Hola, {props.name}/h1>;
+						}
+						*/}
+						Es posible tener tantos componentes como sea necesario,
+						sin saturar tu código.
+					</p>
+					<h2 className='subtitulo'>👉 Gestión de Estado</h2>
+					<p className='descripcion'>
+						El Modelo de Objetos del Documento (DOM) presenta una
+						página web en una estructura de árbol de datos. ReactJS
+						almacena árboles DOM virtuales en la memoria. Al
+						hacerlo, React puede aplicar actualizaciones a partes
+						específicas del árbol de datos, lo que es más rápido que
+						volver a renderizar la totalidad del árbol DOM.
+						<br />
+						Cada vez que haya un cambio en los datos, ReactJS
+						generará un nuevo árbol de DOM virtual y lo comparará
+						con el anterior para encontrar la forma más rápida de
+						implementar los cambios en el DOM real. Este proceso se
+						conoce como diffing.
+						<br />
+						Al asegurarse de que la manipulación de la interfaz de
+						usuario sólo afecta a secciones específicas del árbol
+						real del DOM, renderizar la versión actualizada tarda
+						menos tiempo y utiliza menos recursos. Esta práctica
+						beneficia enormemente a los proyectos grandes con una
+						interacción intensa con el usuario.
+						<br />
+					</p>
 				</article>
 			</section>
 		</>
