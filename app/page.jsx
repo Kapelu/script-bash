@@ -37,7 +37,7 @@ export default function Home() {
 						características y te explicaremos cómo contribuyen al
 						desarrollo de aplicaciones móviles y web.
 					</p>
-					<h2 className='subtitulo'>👉 JSX</h2>
+					<h2 className='subtitulo-left'>👉 JSX</h2>
 					<p className='descripcion'>
 						JSX es una extensión de la sintaxis de JavaScript
 						utilizada en la creación de elementos de React. Los
@@ -74,7 +74,7 @@ export default function Home() {
 						Más adelante en el artículo, discutiremos detalladamente
 						el papel de JSX en la creación de componentes React.
 					</p>
-					<h2 className='subtitulo'>👉 Virtual DOM</h2>
+					<h2 className='subtitulo-left'>👉 Virtual DOM</h2>
 					<p className='descripcion'>
 						El Modelo de Objetos del Documento (DOM) presenta una
 						página web en una estructura de árbol de datos. ReactJS
@@ -97,7 +97,7 @@ export default function Home() {
 						interacción intensa con el usuario.
 						<br />
 					</p>
-					<h2 className='subtitulo'>👉 Virtual DOM</h2>
+					<h2 className='subtitulo-left'>👉 Virtual DOM</h2>
 					<p className='descripcion'>
 						El Modelo de Objetos del Documento (DOM) presenta una
 						página web en una estructura de árbol de datos. ReactJS
@@ -119,7 +119,7 @@ export default function Home() {
 						beneficia enormemente a los proyectos grandes con una
 						interacción intensa con el usuario.
 					</p>
-					<h2 className='subtitulo'>👉 Componentes y Props</h2>
+					<h2 className='subtitulo-left'>👉 Componentes y Props</h2>
 					<p className='descripcion'>
 						ReactJS divide la interfaz de usuario en piezas aisladas
 						y reutilizables de código conocidas como componentes.
@@ -138,7 +138,7 @@ export default function Home() {
 						Es posible tener tantos componentes como sea necesario,
 						sin saturar tu código.
 					</p>
-					<h2 className='subtitulo'>👉 Gestión de Estado</h2>
+					<h2 className='subtitulo-left'>👉 Gestión de Estado</h2>
 					<p className='descripcion'>
 						El Modelo de Objetos del Documento (DOM) presenta una
 						página web en una estructura de árbol de datos. ReactJS

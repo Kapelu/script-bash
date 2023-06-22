@@ -156,7 +156,15 @@ h1 {
 	color: var(--white-light);
 }
 
-.subtitulo {
+.subtitulo-center {
+	margin-top: 0;
+	padding: 0 0 0 3rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: center;
+	color: var(--white-light);
+}
+.subtitulo-left {
 	margin-top: 0;
 	padding: 0 0 0 3rem;
 	font-size: 1.5rem;

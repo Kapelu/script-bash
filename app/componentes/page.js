@@ -86,7 +86,7 @@ export default function Componentes() {
 						<br />
 						Exiaten dos tipos de componentes de React:
 					</p>
-					<h2 className='subtitulo'>
+					<h2 className='subtitulo-center'>
 						👉 los componentes de tipo función
 					</h2>
 					<br />
@@ -94,7 +94,7 @@ export default function Componentes() {
 					<Image className="image" src='/assets/codigo/code3.png' width={600} height={50} alt="React"/>
 					</div>
 					<br />
-					<h2 className='subtitulo'>
+					<h2 className='subtitulo-center'>
 						👉 los componentes de tipo clase
 					</h2>
 					<br />
