@@ -25,14 +25,12 @@ export default function RootLayout({children}) {
 				/> */}
 			</head>
 			<body>
-				<div>
+				<>
 					<Header />
-					<div>
-						<Sidebar />
-						<main>{children}</main>
-					</div>
-				</div>
-				<script src='./component/index.js' type='module'></script>
+					<Sidebar />
+					<main>{children}</main>
+				</>
+				
 			</body>
 		</html>
 	)

@@ -46,6 +46,7 @@ html {
 
 body {
 	margin: 0;
+	padding: 0 12rem;
 	background: #21252e;
 }
 
@@ -56,9 +57,12 @@ $ ************************************************************
 */
 header {
 	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin-bottom: 1rem;
 	width: 100%;
-	margin: 0 0 2rem 0;
-	padding: 0;
+	padding: 0 8rem;
 	z-index: 999;
 	background-color: #21252e;
 	display: flex;
@@ -67,10 +71,21 @@ header {
 }
 
 .logo-react {
+	margin: 0;
+	animation: App-logo-spin infinite 10s linear;
 	display: flex;
-	width: 35%;
+	width: 30%;
 	height: auto;
 	margin: auto;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .daniel-calderon {
@@ -92,9 +107,8 @@ aside {
 	flex-direction: column;
 	width: 200px;
 	background-color: #000000;
-	left: 0px;
-	top: 5.1rem;
-	bottom: 30px;
+	top: 6rem; 
+	bottom: 2rem;
 	overflow: auto;
 	border-radius: 10px;
 }
@@ -123,10 +137,8 @@ $ **********************************************************
 main {
 	background: #21252e;
 	max-width: 100%;
-	padding-top: 2rem;
-	margin-left: 200px;
-	left: 0px;
-	top: 15rem;
+	margin-left: 12.5rem;
+	top: 6rem;
 	overflow: auto;
 }
 
@@ -143,22 +155,22 @@ h1 {
 }
 
 .contenedor {
-	padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+	/* padding: 2.5rem 0.5rem 0.5rem 0.5rem; */
 	box-sizing: inherit;
 	/*border-color: 5px solid #23272f;*/
 }
-.titulo {
+.titulo {/* 
 	margin-top: 0.5rem;
-	margin-bottom: 1rem;
+	margin-bottom: 1rem; */
 	font-size: 1.5rem;
 	font-weight: 400;
 	text-align: center;
 	color: var(--white-light);
 }
 
-.subtitulo-center {
+.subtitulo-center {/* 
 	margin-top: 0;
-	padding: 0 0 0 3rem;
+	padding: 0 0 0 3rem; */
 	font-size: 1.5rem;
 	font-weight: 400;
 	text-align: center;
@@ -206,7 +218,7 @@ h1 {
 }
 .code-text {
 	margin: 0;
-	padding: .5rem .5rem 2rem .5rem;
+	padding: 0.5rem 0.5rem 2rem 0.5rem;
 	width: 525px;
 	height: 25px;
 	border-radius: 5px;

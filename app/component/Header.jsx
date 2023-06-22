@@ -6,7 +6,7 @@ export default function Header() {
 			<div>
 				<Image
 					className='logo-react'
-					src='/assets/logo-react.png'
+					src='/assets/logo-react.svg'
 					width={100}
 					height={100}
 					alt='React'
