@@ -46,7 +46,7 @@ html {
 
 body {
 	margin: 0;
-	background: #21252E;
+	background: #21252e;
 }
 
 /*
@@ -60,7 +60,7 @@ header {
 	margin: 0 0 2rem 0;
 	padding: 0;
 	z-index: 999;
-	background-color: #21252E;
+	background-color: #21252e;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -121,7 +121,7 @@ $ ********************   Sección MAIN   ********************
 $ **********************************************************
 */
 main {
-	background: #21252E;
+	background: #21252e;
 	max-width: 100%;
 	padding-top: 2rem;
 	margin-left: 200px;
@@ -148,7 +148,7 @@ h1 {
 	/*border-color: 5px solid #23272f;*/
 }
 .titulo {
-	margin-top: .5rem;
+	margin-top: 0.5rem;
 	margin-bottom: 1rem;
 	font-size: 1.5rem;
 	font-weight: 400;
@@ -164,7 +164,7 @@ h1 {
 	text-align: left;
 	color: var(--white-light);
 }
-.contenedor-codigo{
+.contenedor-codigo {
 	padding: 0 0 0 4.5rem;
 	background-color: #f1f1f1;
 	border: 1px solid #ddd;
@@ -187,7 +187,24 @@ h1 {
 }
 
 .imagen {
-	padding: 0 0 0 4.5rem;
 	width: 100%;
 	height: auto;
+}
+
+.container-code {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.code-text {
+	margin: 0;
+	padding: .5rem .5rem 2rem .5rem;
+	width: 525px;
+	height: 25px;
+	border-radius: 5px;
+	font-family: monospace;
+	font-size: 14px;
+	color: #ffffff;
+	background-color: #3f3f3f;
+	text-align: center;
 }

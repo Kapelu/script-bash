@@ -27,7 +27,6 @@ export default function RootLayout({children}) {
 			<body>
 				<div>
 					<Header />
-
 					<div>
 						<Sidebar />
 						<main>{children}</main>

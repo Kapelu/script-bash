@@ -1,3 +1,5 @@
-const nombre = 'kapelu'
-const element = <h1>Hola, {nombre}!!!</h1>
-ReactDOM.render(element, document.getElementById('root'))
+class Welcome extends React.Component {
+	render() {
+		return <div>Hello, {this.props.name}</div>
+	}
+}
