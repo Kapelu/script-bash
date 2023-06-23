@@ -3,56 +3,23 @@ export default function Clase2() {
 		<>
 			<section className='seccion'>
 				<article className='contenedor'>
-					<h1 className='titulo' >Clase 2</h1>
-					<p className='descripcion' >
-						React es una biblioteca. Te permite agrupar componentes,
-						pero no prescribe cómo hacer el enrutamiento y la
-						obtención de datos. Para construir una aplicación
-						completa en React, recomendamos un framework full-stack
-						de React como Next.js
-						<br/>
-
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero praesentium, laborum dicta placeat, nam dolore corrupti ea eveniet quia quos enim impedit aliquid, explicabo animi. At fugit aut minima velit molestiae odio nulla rerum quaerat repudiandae earum, laborum pariatur vel voluptatum libero? Quae explicabo earum, libero possimus natus reprehenderit optio quas neque, soluta illo dolorem repellat inventore labore vel animi deleniti numquam! Illo, obcaecati doloremque nam perferendis amet a beatae ipsa quia, ullam id ipsum consectetur eum. Totam blanditiis vel adipisci iure sed, sint a eum rem ut dolores placeat aspernatur illo expedita ad quo harum reprehenderit nam quis neque?
+					<h1 className='titulo'>
+						Propiedades <code style={{color: 'grey'}}>(props)</code>
+					</h1>
+					<p className='descripcion'>
+						En React, los Props se refieren a las propiedades las
+						cuales cumplen un rol importante en el proceso de
+						desarrollo de una aplicación o página web. Los
+						componentes son los bloques de construcción de React y
+						estos componentes usan Props para mejorar su
+						funcionalidad y poder reusar el código.
+						<br />
+						Los Props tiene una importante función: ellos pasan los
+						datos de un componente a otro, ofreciendo así un canal
+						por el medio del cual los componentes se puede
+						comunicar.
 					</p>
-					<p className='descripcion' >
-						React es una biblioteca. Te permite agrupar componentes,
-						pero no prescribe cómo hacer el enrutamiento y la
-						obtención de datos. Para construir una aplicación
-						completa en React, recomendamos un framework full-stack
-						de React como Next.js
-						<br/>
-
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero praesentium, laborum dicta placeat, nam dolore corrupti ea eveniet quia quos enim impedit aliquid, explicabo animi. At fugit aut minima velit molestiae odio nulla rerum quaerat repudiandae earum, laborum pariatur vel voluptatum libero? Quae explicabo earum, libero possimus natus reprehenderit optio quas neque, soluta illo dolorem repellat inventore labore vel animi deleniti numquam! Illo, obcaecati doloremque nam perferendis amet a beatae ipsa quia, ullam id ipsum consectetur eum. Totam blanditiis vel adipisci iure sed, sint a eum rem ut dolores placeat aspernatur illo expedita ad quo harum reprehenderit nam quis neque?
-					</p>
-					<p className='descripcion' >
-						React es una biblioteca. Te permite agrupar componentes,
-						pero no prescribe cómo hacer el enrutamiento y la
-						obtención de datos. Para construir una aplicación
-						completa en React, recomendamos un framework full-stack
-						de React como Next.js
-						<br/>
-
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero praesentium, laborum dicta placeat, nam dolore corrupti ea eveniet quia quos enim impedit aliquid, explicabo animi. At fugit aut minima velit molestiae odio nulla rerum quaerat repudiandae earum, laborum pariatur vel voluptatum libero? Quae explicabo earum, libero possimus natus reprehenderit optio quas neque, soluta illo dolorem repellat inventore labore vel animi deleniti numquam! Illo, obcaecati doloremque nam perferendis amet a beatae ipsa quia, ullam id ipsum consectetur eum. Totam blanditiis vel adipisci iure sed, sint a eum rem ut dolores placeat aspernatur illo expedita ad quo harum reprehenderit nam quis neque?
-					</p>
-					<p className='descripcion' >
-						React es una biblioteca. Te permite agrupar componentes,
-						pero no prescribe cómo hacer el enrutamiento y la
-						obtención de datos. Para construir una aplicación
-						completa en React, recomendamos un framework full-stack
-						de React como Next.js
-						<br/>
-
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero praesentium, laborum dicta placeat, nam dolore corrupti ea eveniet quia quos enim impedit aliquid, explicabo animi. At fugit aut minima velit molestiae odio nulla rerum quaerat repudiandae earum, laborum pariatur vel voluptatum libero? Quae explicabo earum, libero possimus natus reprehenderit optio quas neque, soluta illo dolorem repellat inventore labore vel animi deleniti numquam! Illo, obcaecati doloremque nam perferendis amet a beatae ipsa quia, ullam id ipsum consectetur eum. Totam blanditiis vel adipisci iure sed, sint a eum rem ut dolores placeat aspernatur illo expedita ad quo harum reprehenderit nam quis neque?
-					</p>
-					<p className='descripcion' >
-						React es una biblioteca. Te permite agrupar componentes,
-						pero no prescribe cómo hacer el enrutamiento y la
-						obtención de datos. Para construir una aplicación
-						completa en React, recomendamos un framework full-stack
-						de React como Next.js
-						<br/>
-
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero praesentium, laborum dicta placeat, nam dolore corrupti ea eveniet quia quos enim impedit aliquid, explicabo animi. At fugit aut minima velit molestiae odio nulla rerum quaerat repudiandae earum, laborum pariatur vel voluptatum libero? Quae explicabo earum, libero possimus natus reprehenderit optio quas neque, soluta illo dolorem repellat inventore labore vel animi deleniti numquam! Illo, obcaecati doloremque nam perferendis amet a beatae ipsa quia, ullam id ipsum consectetur eum. Totam blanditiis vel adipisci iure sed, sint a eum rem ut dolores placeat aspernatur illo expedita ad quo harum reprehenderit nam quis neque?
+					<p className='descripcion'>
 					</p>
 				</article>
 			</section>

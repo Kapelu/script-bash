@@ -137,6 +137,7 @@ $ **********************************************************
 main {
 	background: #21252e;
 	max-width: 100%;
+	margin-top: 8rem;
 	margin-left: 12.5rem;
 	overflow: auto;
 }
@@ -148,7 +149,6 @@ h1 {
 }
 
 .seccion {
-	padding-top: 6rem;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
