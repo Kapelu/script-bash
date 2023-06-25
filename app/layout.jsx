@@ -13,7 +13,7 @@ export default function RootLayout({children}) {
 		<html lang='es'>
 			<head>
 				<meta charSet='UTF-8' />
-				{/* <Link rel='preconnect' href='https://fonts.googleapis.com' />
+				<Link rel='preconnect' href='https://fonts.googleapis.com' />
 				<Link
 					rel='preconnect'
 					href='https://fonts.gstatic.com'
@@ -22,7 +22,7 @@ export default function RootLayout({children}) {
 				<Link
 					href='https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'
 					rel='stylesheet'
-				/> */}
+				/> 
 			</head>
 			<body>
 				<>
