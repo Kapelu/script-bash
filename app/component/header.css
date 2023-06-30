@@ -1,0 +1,40 @@
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin-bottom: 1rem;
+	width: 100%;
+	padding: 0 8rem;
+	z-index: 999;
+	background-color: #21252e;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-react {
+	margin: 0;
+	animation: App-logo-spin infinite 10s linear;
+	display: flex;
+	width: 30%;
+	height: auto;
+	margin: auto;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.daniel-calderon {
+	display: flex;
+	width: 32%;
+	height: auto;
+	margin: auto;
+	border-radius: 100%;
+}

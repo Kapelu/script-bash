@@ -1,0 +1,90 @@
+:root {
+	--main-font: sans-serif;
+	--font-size: 16px;
+	--first-color: #359fca;
+	--first-modal-color: rgba(53, 160, 202, 0.75);
+	--second-color: #23272f;
+	--second-modal-color: rgba(35, 39, 47, 0.75);
+	--third-color: #808080;
+	--third-modal-color: rgba(128, 128, 128, 0.75);
+	--black_light: rgba(0, 0, 0, 0.75);
+	--grey-light: #aaa;
+	--white-light: rgba(255, 255, 255, 0.75);
+	--container-width: 1200px;
+}
+/* 
+@media (prefers-color-scheme: dark) {
+	body {
+		color: #90d1da;
+		background: #b6b5b5;
+	}
+}
+*/
+
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: var(--font-size);
+	font-family: var(--main-font);
+	scroll-behavior: smooth; /*$ Le da el efecto de transicion de una seccion a otra */
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+/*$ Elimina ScroolBar Lateral */
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+body {
+	margin: 0;
+	padding: 0 12rem;
+	background: #21252e;
+}
+
+/*
+$ **********************************************************
+$ ********************   Sección MAIN   ********************
+$ **********************************************************
+*/
+main {
+	background: #21252e;
+	max-width: 100%;
+	margin: 8rem auto;
+	overflow: auto;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+	color: var(--white-light);
+}
+
+p {
+	line-height: 1.6;
+	color:var(--grey-light);
+}
+.seccion {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	/* padding: 2.5rem 0.5rem 0.5rem 0.5rem; */
+	box-sizing: inherit;
+	/*border-color: 5px solid #23272f;*/
+}
+.titulo {
+	/* 
+	margin-top: 0.5rem;
+	margin-bottom: 1rem; */
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: center;
+	color: var(--white-light);
+}

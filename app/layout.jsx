@@ -1,7 +1,6 @@
-import './style/style.css'
-/* import Link from 'next/link' */
+import './globals.css'
 import Header from './component/Header.jsx'
-import Sidebar from './component/Sidebar.jsx'
+import Footer from './component/Footer.jsx'
 
 export const metadata = {
 	title: 'Create React App',
@@ -11,26 +10,10 @@ export const metadata = {
 export default function RootLayout({children}) {
 	return (
 		<html lang='es'>
-			<head>
-				<meta charSet='UTF-8' />
-				<Link rel='preconnect' href='https://fonts.googleapis.com' />
-				<Link
-					rel='preconnect'
-					href='https://fonts.gstatic.com'
-					crossorigin
-				/>
-				<Link
-					href='https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'
-					rel='stylesheet'
-				/> 
-			</head>
 			<body>
-				<>
-					<Header />
-					<Sidebar />
-					<main>{children}</main>
-				</>
-				
+				<Header />
+				<main>{children}</main>
+				<Footer />
 			</body>
 		</html>
 	)
