@@ -46,6 +46,34 @@ body {
 	background: #21252e;
 }
 
+h1 {
+	font-size: 2rem;
+	text-align: center;
+	color: var(--white-light);
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: center;
+	color: var(--first-color);
+}
+
+h3 {
+	font-size: 1.2rem;
+	text-align: left;
+	color: var(--first-color);
+}
+
+p {
+	line-height: 1.6;
+	color: var(--grey-light);
+	text-align: justify;
+}
+
+i{
+	color:#acff2fb0;
+}
 /*
 $ **********************************************************
 $ ********************   Sección MAIN   ********************
@@ -58,33 +86,16 @@ main {
 	overflow: auto;
 }
 
-h1 {
-	font-size: 2rem;
-	text-align: center;
-	color: var(--white-light);
-}
-
-p {
-	line-height: 1.6;
-	color: var(--grey-light);
-	text-align: justify;
-}
 .seccion {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-.contenedor {
+.article {
 	margin-left: auto;
 	margin-right: auto;
 	border-color: 5px solid #23272f;
 	width: 100%;
     min-height: 100vh;
-}
-.titulo {
-	font-size: 1.5rem;
-	font-weight: 400;
-	text-align: center;
-	color: var(--white-light);
 }

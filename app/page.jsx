@@ -4,8 +4,8 @@ export default function Home() {
 	return (
 		<>
 			<section className='seccion'>
-				<article className='contenedor'>
-					<h2 className='titulo'>¿ Qué es React ?</h2>
+				<article className='article'>
+					<h2>¿ Qué es React ?</h2>
 					<p>
 						React es una librería para crear interfaces de usuarios
 						con código abierto, es decir, que está a disposición de
@@ -25,32 +25,23 @@ export default function Home() {
 						framework. Esto lo veremos más adelante en los
 						requerimientos.
 					</p>
+					<h2>¿ Para qué sirve React ?</h2>
 					<p>
-						Por supuesto, es la base de la programación de Facebook,
-						Instagram y WhatsApp; y varias compañías internacionales
-						como Tesla, Netflix, Twitter, Uber, Walmart, Shopify,
-						AirBnb, entre otras. Asimismo React cuenta con su
-						repositorio en la plataforma de GitHub, donde tanto
-						desarrolladores internos y externos comparten sus
-						modificaciones sugeridas al código.
-					</p>
-					<h2 className='titulo'>¿ Para qué sirve React ?</h2>
-					<p>
-						La función principal de React es
-						desarrollar páginas web de una manera gratuita y
-						sencilla gracias a sus componentes reutilizables. Estos
-						hacen posible usar un mismo elemento en varias partes
-						del sitio o en otros sitios sin necesidad de volver a
-						escribir todo el código. Como resultado, los
-						programadores web ahorran gran cantidad de tiempo y
-						trabajo.
+						La función principal de React es desarrollar páginas web
+						de una manera gratuita y sencilla gracias a sus
+						componentes reutilizables. Estos hacen posible usar un
+						mismo elemento en varias partes del sitio o en otros
+						sitios sin necesidad de volver a escribir todo el
+						código. Como resultado, los programadores web ahorran
+						gran cantidad de tiempo y trabajo.
 					</p>
 					<p>
 						React cuenta con un óptimo desempeño que se encarga de
 						actualizar y renderizar los cambios realizados de forma
 						automática. Esta cualidad permite a los programadores
 						desarrollar sus códigos sin mayores contratiempos en el
-						modelo en objetos para la representación de documentos &nbsp;
+						modelo en objetos para la representación de documentos
+						&nbsp;
 						<i>(DOM)</i>.
 					</p>
 					<p>
@@ -63,6 +54,39 @@ export default function Home() {
 						aplicaciones de realidad virtual con la ayuda del
 						framework React 360.
 					</p>
+					<h2>Conceptos Previos</h2>
+					<h3>&#128073; &nbsp; Sintaxis JSX</h3>
+					<p>
+						Es una estension de la sintaxis de <i>JavaScript</i> que
+						produce elementos de <i>React</i>.
+					</p>
+					<p>
+						Se puede usar:
+						<ul>
+							<li>
+								Dentro de estructuras de control com <i>if</i> y{' '}
+								<i>for</i>.
+							</li>
+							<li>Asignarlo a variables.</li>
+							<li>
+								Aceptarlo como argumentos de retorno en{' '}
+								<i>funciones</i>.
+							</li>
+							<li>
+								Expresiones <i>Javascript</i>.
+							</li>
+						</ul>
+						Veamos un ejemplo:
+						<br />
+					</p>
+					<div>
+						<Image
+							src='/assets/code/jsx.png'
+							alt='Picture of the author'
+							width={600}
+							height={300}
+						/>
+					</div>
 				</article>
 			</section>
 		</>
