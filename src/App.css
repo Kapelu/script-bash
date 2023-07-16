@@ -1,35 +1,51 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 5s linear;
-  height: 80px;
+	animation: App-logo-spin infinite 5s linear;
+	height: 80px;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .App-header {
-  background-color: #0D6D8C;
-  font-size: 20px;
+	background-color: #0d6d8c;
+	font-size: 20px;
 
-  height: 150px;
-  padding: 20px;
-  color: white;
+	height: 150px;
+	padding: 20px;
+	color: white;
 }
 
-.Container{
-  /* text-align:justify; */
-  font-size: large;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
+.Container {
+	/* text-align:justify; */
+	font-size: large;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
 }
-
+.clases {
+	width: 100%;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.ejercicio {
+	color: #12323f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .footer {
 	margin-bottom: 4rem;
 	padding: 0.5rem;
@@ -50,4 +66,59 @@
 	}
 }
 
+/*
+$ CARD de Componente
+*/
 
+.card {
+	position: relative;
+	width: 200px;
+	height: 100px;
+	background: mediumturquoise;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+	font-weight: bold;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.card::before,
+.card::after {
+	position: absolute;
+	content: '';
+	width: 20%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+	font-weight: bold;
+	background-color: lightblue;
+	transition: all 0.5s;
+}
+
+.card::before {
+	top: 0;
+	right: 0;
+	border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+	bottom: 0;
+	left: 0;
+	border-radius: 0 100% 0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	transition: all 0.5s;
+}
+
+.card:hover:after {
+	content: 'Soy un componente';
+}
