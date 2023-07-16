@@ -25,7 +25,7 @@ body {
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
-  background-color: #a0a0a0;
+	background-color: #a0a0a0;
 }
 
 a {
@@ -46,13 +46,13 @@ h1 {
 h2 {
 	margin: 0;
 	font-size: 1.5rem;
-	border-top: thin solid #0D6D8C;
-	border-bottom: thin solid #0D6D8C;
+	border-top: thin solid #0d6d8c;
+	border-bottom: thin solid #0d6d8c;
 	margin: 2rem auto;
 	padding: 0.5rem 1rem;
 	width: 250px;
 	text-align: center;
-	color: #0D6D8C;
+	color: #0d6d8c;
 }
 
 h3 {
@@ -64,9 +64,12 @@ hr {
 	border-color: #aaa;
 }
 
-ul{
-	display:flex;
+ul {
+	color: #12323f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	align-items: center;
-	list-style: none
+	list-style: none;
 }

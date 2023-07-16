@@ -3,6 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 import Componente from './components/Componente'
 import Propiedades from './components/Propiedades'
+import Estado from './components/Estado'
 
 export default function App() {
 	return (
@@ -13,30 +14,53 @@ export default function App() {
 			</header>
 			<section className='clases'>
 				<article>
-					<h2>Componente</h2>
+					<h2>
+						<img src={logo} className='App-logo-title' alt='logo' />
+						&nbsp;Componente&nbsp;
+						<img src={logo} className='App-logo-title' alt='logo' />
+					</h2>
 					<Componente msg='"Hola, Soy un componente"' />
 					<br />
 				</article>
 				<article>
-					<h2>Propiedades</h2>
+					<h2>
+						<img src={logo} className='App-logo-title' alt='logo' />
+						&nbsp;Propiedades&nbsp;
+						<img src={logo} className='App-logo-title' alt='logo' />
+					</h2>
 					<Propiedades
 						cadena='Esto es una cadena de texto'
 						numero={19}
-						booleano ={true}
-						arreglo ={[1,2,3]}
+						booleano={true}
+						arreglo={[1, 2, 3]}
 						objeto={{
-							nombre:'Daniel Calderon',
-							email:'ddaniel_calderon@hotmail.com'
+							nombre: 'Daniel Calderon',
+							email: 'ddaniel_calderon@hotmail.com',
 						}}
-						funcion = {num => num*num}
+						funcion={(num) => num * num}
 						elementoReact={<i>Elemento de React</i>}
-						componenteReact={<Componente msg='Soy un componente pasado como "props"'/>}
+						componenteReact={
+							<Componente msg='Soy un componente pasado como "props"' />
+						}
 					/>
 					<br />
 				</article>
 				<article>
-					<h2>xxxxx</h2>
-					<Componente msg='"Soy un componente"' />
+					<h2>
+						<img src={logo} className='App-logo-title' alt='logo' />
+						&nbsp;Estado&nbsp;
+						<img src={logo} className='App-logo-title' alt='logo' />
+					</h2>
+					<Estado />
+					<br />
+				</article>
+				<article>
+					<h2>
+						<img src={logo} className='App-logo-title' alt='logo' />
+						&nbsp;XXXXXXXX&nbsp;
+						<img src={logo} className='App-logo-title' alt='logo' />
+					</h2>
+					<Componente />
 					<br />
 				</article>
 			</section>

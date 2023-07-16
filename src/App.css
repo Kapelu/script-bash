@@ -3,11 +3,25 @@
 }
 
 .App-logo {
-	animation: App-logo-spin infinite 5s linear;
+	animation: App-logo-spin infinite 9s linear;
 	height: 80px;
+}
+.App-logo-title {
+	animation: App-logo-spin2 infinite 3s linear;
+	height: 20px;
+	
 }
 
 @keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes App-logo-spin2 {
 	from {
 		transform: rotate(0deg);
 	}
@@ -74,7 +88,7 @@ $ CARD de Componente
 	position: relative;
 	width: 200px;
 	height: 100px;
-	background: mediumturquoise;
+	background: #0D6D8C;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -82,6 +96,7 @@ $ CARD de Componente
 	font-weight: bold;
 	border-radius: 15px;
 	cursor: pointer;
+	color: #ffffffc9;
 }
 
 .card::before,
@@ -95,8 +110,9 @@ $ CARD de Componente
 	justify-content: center;
 	font-size: 1rem;
 	font-weight: bold;
-	background-color: lightblue;
+	background-color: #61dafb;
 	transition: all 0.5s;
+	color: #000;
 }
 
 .card::before {

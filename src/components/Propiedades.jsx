@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Propiedades(props) {
 	return (
-		<div className='ejercicio'>
+		
 			<ul>
 				<li>{props.porDefecto}</li>
 				<br />
@@ -23,7 +23,7 @@ export default function Propiedades(props) {
 				<li>{props.componenteReact}</li>
 				<br />
 			</ul>
-		</div>
+		
 	)
 }
 
