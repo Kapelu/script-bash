@@ -3,7 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 import Componente from './components/Componente'
 import Propiedades from './components/Propiedades'
-import Estado from './components/Estado'
+import Hook from './components/Hook'
 
 export default function App() {
 	return (
@@ -14,7 +14,7 @@ export default function App() {
 			</header>
 			<section className='clases'>
 				<article>
-					<h2>
+					<h2 className='titulo'>
 						<img src={logo} className='App-logo-title' alt='logo' />
 						&nbsp;Componente&nbsp;
 						<img src={logo} className='App-logo-title' alt='logo' />
@@ -23,7 +23,7 @@ export default function App() {
 					<br />
 				</article>
 				<article>
-					<h2>
+					<h2 className='titulo'>
 						<img src={logo} className='App-logo-title' alt='logo' />
 						&nbsp;Propiedades&nbsp;
 						<img src={logo} className='App-logo-title' alt='logo' />
@@ -46,16 +46,16 @@ export default function App() {
 					<br />
 				</article>
 				<article>
-					<h2>
+					<h2 className='titulo'>
 						<img src={logo} className='App-logo-title' alt='logo' />
-						&nbsp;Estado&nbsp;
+						&nbsp;Hook&nbsp;
 						<img src={logo} className='App-logo-title' alt='logo' />
 					</h2>
-					<Estado />
+					<Hook />
 					<br />
 				</article>
 				<article>
-					<h2>
+					<h2 className='titulo'>
 						<img src={logo} className='App-logo-title' alt='logo' />
 						&nbsp;XXXXXXXX&nbsp;
 						<img src={logo} className='App-logo-title' alt='logo' />

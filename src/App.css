@@ -74,6 +74,15 @@
 	font-style: italic;
 }
 
+.titulo {
+	border-top: thin solid #0d6d8c;
+	border-bottom: thin solid #0d6d8c;
+	margin: 2rem auto;
+	width: 330px;
+	padding: 0.5rem 1rem;
+	text-align: center;
+}
+
 @media screen and (min-width: 1024px) {
 	.footer {
 		margin-bottom: 0;
