@@ -28,6 +28,7 @@
 .ejercicio {
 	color: #12323f;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }

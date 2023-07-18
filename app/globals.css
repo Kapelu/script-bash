@@ -46,13 +46,15 @@ h1 {
 
 h2 {
 	margin: 0;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	color: #0d6d8c;
 }
 
 h3 {
 	margin: 0;
+	padding: 0;
 	font-size: 1.25rem;
+	color: #3660af;
 }
 
 ul {
@@ -65,13 +67,21 @@ ul {
 	list-style: none;
 }
 
-span{
+span {
+	padding: 0;
 	font-size: 1.7rem;
 	color: #4a4d4e;
 }
+p{
+	margin: 0;
+}
+
+button{
+	margin: .5rem;
+}
 
 .Container {
-	/* text-align:justify; *//* 
+	/* text-align:justify; */ /* 
 	font-size: large; */
 	text-align: center;
 	margin-left: auto;
