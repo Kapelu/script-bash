@@ -1,0 +1,21 @@
+.footer {
+	position: sticky;
+	margin-bottom: 0;
+	padding: 0.5rem;
+	text-align: center;
+	color: #f3efef;
+	background-color: #5f5f5f;
+}
+
+.link {
+	color: #ffee00;
+	font-family: sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+@media screen and (min-width: 1024px) {
+	.footer {
+		margin-bottom: 0;
+	}
+}
