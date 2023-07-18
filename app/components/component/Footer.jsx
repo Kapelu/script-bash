@@ -21,7 +21,7 @@ export default function Footer() {
 			</small>
 			<br />
 			<small className='repositorio' >
-				Repositorio del curso en  &nbsp;
+				Repositorio en  &nbsp;
 				<Link
 					className='link'
 					href='https://github.com/Kapelu/ReactJs'
