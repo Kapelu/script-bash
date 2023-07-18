@@ -13,17 +13,18 @@ export default function HookUseState(props) {
 			<h3>
 				<i>&#39;UseState&#39;</i>
 			</h3>
-			<p>Contador Hook</p>
+			<br />
+			<p><u><i>Contador de {props.titulo}</i></u></p>
+			<br />
+			<h3>{contador}</h3>
 			<nav>
 				<button onClick={sumar}>➕</button>
 				<button onClick={restar}>➖</button>
 			</nav>
-			<p>Contador de {props.titulo}</p>
-			<h3>{contador}</h3>
 		</div>
 	)
 }
 
-HookUseState.defaultProps ={
-	titulo:'Clicks',
+HookUseState.defaultProps = {
+	titulo: 'Clicks',
 }

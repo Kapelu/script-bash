@@ -12,7 +12,7 @@ export default function Footer() {
 				Sitio diseñado y desarrollado por &nbsp;
 				<Link
 					className='link'
-					href='https://github.com/Kapelu'
+					href='https://danielcalderon.vercel.app/'
 					target='_blank'
 					rel='noopener noreferrer'
 				>
