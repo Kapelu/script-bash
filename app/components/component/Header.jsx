@@ -8,6 +8,7 @@ import '@/app/components/component/header.css'
 export default function Header() {
 	return (
 		<header className='App-header'>
+			<h1>Welcome </h1>
 			<div className='logos'>
 				<Image
 					src={logoReact}
@@ -15,7 +16,7 @@ export default function Header() {
 					alt='logo'
 					priority={true}
 				/>
-				<span>&nbsp;With&nbsp;&nbsp;&nbsp;</span>
+				<span>&nbsp;&&nbsp;&nbsp;&nbsp;</span>
 				<Image
 					src={logoNext}
 					className='App-logo-next'
@@ -23,8 +24,6 @@ export default function Header() {
 					priority={true}
 				/>
 			</div>
-
-			<h1>Welcome to React</h1>
 		</header>
 	)
 }

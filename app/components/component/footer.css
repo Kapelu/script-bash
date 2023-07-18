@@ -14,6 +14,16 @@
 	font-style: italic;
 }
 
+.App-logo-github {
+    width: auto;
+	height: 1.2rem;
+}
+
+.repositorio{
+	display: inline-flex;
+	align-items: center;
+}
+
 @media screen and (min-width: 1024px) {
 	.footer {
 		margin-bottom: 0;

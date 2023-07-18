@@ -1,7 +1,7 @@
 .App-header {
 	background-color: #0d6d8c;
 	font-size: 20px;
-	height: 150px;
+	height: 8rem;
 	padding: 20px;
 	color: white;
 	text-align: center;
@@ -10,6 +10,7 @@
 .logos{
 	display: inline-flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .App-logo-react {
