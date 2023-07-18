@@ -26,5 +26,5 @@ export default function HookUseState(props) {
 }
 
 HookUseState.defaultProps = {
-	titulo: 'Clicks',
+	titulo: 'Seguidores',
 }

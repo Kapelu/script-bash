@@ -33,7 +33,7 @@ export default function Home() {
 				</article>
 				<article>
 					<h2 className='titulo'>&nbsp;Hook&nbsp;</h2>
-					<HookUseState titulo='Seguidores'/>
+					<HookUseState titulo='Clicks'/>
 					<br /><br />
 					{/* <HookUseState /> */}
 					<br />
