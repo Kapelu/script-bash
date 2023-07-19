@@ -6,9 +6,10 @@ export default function HookUseEffect() {
 	const [scrollY, setScrollY] = useState(0)
 
 	useEffect(() => {
+		/* 
 		console.log('%cFase de Montaje', 'color:green;font-weight:bold')
 		console.log('%cComponentDidMount()', 'color:red;font-size:.8rem')
-
+		*/
 		const detectarScroll = ()=>{ setScrollY(window.pageYOffset)}
 
 	})
