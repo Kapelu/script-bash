@@ -33,6 +33,12 @@
 	align-items: center;
 }
 
+.hook-line{
+	width: 230px;
+	margin: 2rem auto;
+	border-bottom:  medium solid #0d6d8c;
+}
+
 .titulo {
 	border-top: thin solid #0d6d8c;
 	border-bottom: thin solid #0d6d8c;

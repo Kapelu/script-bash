@@ -25,6 +25,11 @@ export default function HookUseState(props) {
 	)
 }
 
-HookUseState.defaultProps = {
-	titulo: 'Seguidores',
-}
+
+/*
+$ ****defaultProps pronto desaparecera****
+
+		HookUseState.defaultProps = {
+			titulo: 'Seguidores',
+		}
+ */

@@ -2,6 +2,7 @@
 import Componente from '@/app/components/Componente'
 import Propiedades from './components/Propiedades'
 import HookUseState from './components/HookUseState'
+import HookUseEffect from './components/HookUseEffect'
 
 export default function Home() {
 	return (
@@ -34,8 +35,8 @@ export default function Home() {
 				<article>
 					<h2 className='titulo'>&nbsp;Hook&nbsp;</h2>
 					<HookUseState titulo='Clicks'/>
-					<br /><br />
-					{/* <HookUseState /> */}
+					<div className='hook-line'></div>
+					<HookUseEffect />
 					<br />
 				</article>
 				<article>
