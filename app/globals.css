@@ -72,12 +72,28 @@ span {
 	font-size: 1.7rem;
 	color: #4a4d4e;
 }
-p{
+p {
 	margin: 0;
 }
 
-button{
+button,
+button:focus {
 	margin: .5rem;
+	font-size: 17px;
+	padding: 10px 25px;
+	border-radius: 0.7rem;
+	background-image: linear-gradient(#b7c0c4, #0D6D8C);
+	border: 1px solid rgb(50, 50, 50);
+	border-bottom: 5px solid rgb(50, 50, 50);
+	transform: translate(0, -3px);
+	transition: 0.2s;
+	transition-timing-function: linear;
+}
+
+button:active {
+	margin: .5rem;
+	transform: translate(0, 0);
+	border-bottom: 2px solid rgb(50, 50, 50);
 }
 
 .Container {

@@ -39,11 +39,11 @@ export default function Home() {
 					<HookUseEffect />
 					<br />
 				</article>
-				<article>
+				{/* <article>
 					<h2 className='titulo'>&nbsp;XXXXXXXX&nbsp;</h2>
 					<Componente />
 					<br />
-				</article>
+				</article> */}
 			</section>
 		</main>
 	)

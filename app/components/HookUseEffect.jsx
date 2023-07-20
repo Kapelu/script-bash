@@ -3,28 +3,34 @@ import './style.css'
 import React, {useState, useEffect} from 'react'
 
 export default function HookUseEffect() {
-	const [scrollY, setScrollY] = useState(0)
+	const [count, setCount] = useState(0)
+	const maxClicks = 5
 
 	useEffect(() => {
-		/* 
-		console.log('%cFase de Montaje', 'color:green;font-weight:bold')
-		console.log('%cComponentDidMount()', 'color:red;font-size:.8rem')
-		*/
-		const detectarScroll = ()=>{ setScrollY(window.pageYOffset)}
+		if (count === maxClicks) {
+			setCount(0)
+		}
+	}, [count, maxClicks])
 
-	})
+	const handleIncrement = () => {
+		setCount((prevCount) => prevCount + 1)
+	}
+
 	return (
 		<div className='ejercicio'>
 			<h3>
-				<i>&#39;UseEffect&#39;</i> y ciclo de vida
+				<i>&#39;UseState&#39;</i>
 			</h3>
 			<br />
-			<p>Scroll y del navegador {scrollY}px</p>
+			<p>
+				Has hecho {count} clic{count !== 1 && 's'}
+			</p><br />
+			<button onClick={handleIncrement}>Click Me</button>
 		</div>
 	)
 }
-/* 
-HookUseState.defaultProps = {
-	titulo: 'Seguidores',
-}
+
+/* useEffect es un hook que le permite realizar efectos secundarios en un componente funcional. Los efectos secundarios son operaciones que ocurren fuera del flujo normal de la representación del componente, como obtener datos de una API, configurar suscripciones o modificar el DOM.
+
+Toma dos argumentos: una función que realiza el efecto secundario y una matriz opcional de dependencias que especifican cuándo se debe ejecutar el efecto. La función pasada a useEffect se ejecuta después de que el componente se ha renderizado por primera vez y luego se vuelve a ejecutar cada vez que cambia alguna de las dependencias.
 */
