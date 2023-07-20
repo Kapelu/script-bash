@@ -4,16 +4,16 @@ import React, {useState, useEffect} from 'react'
 
 export default function HookUseEffect() {
 	const [count, setCount] = useState(0)
-	const maxClicks = 5
+	const maxClicks = 9
+	const cont = 0
 
 	useEffect(() => {
-		if (count === maxClicks) {
-			setCount(0)
-		}
+		if (count === maxClicks) setCount(cont)
 	}, [count, maxClicks])
 
+	console.log(cont)
 	const handleIncrement = () => {
-		setCount((prevCount) => prevCount + 1)
+		setCount((contador) => contador + 1)
 	}
 
 	return (
@@ -24,7 +24,8 @@ export default function HookUseEffect() {
 			<br />
 			<p>
 				Has hecho {count} clic{count !== 1 && 's'}
-			</p><br />
+			</p>
+			<br />
 			<button onClick={handleIncrement}>Click Me</button>
 		</div>
 	)
