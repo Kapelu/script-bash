@@ -11,7 +11,7 @@ export default function HookUseEffect() {
 		if (count === maxClicks) setCount(cont)
 	}, [count, maxClicks])
 
-	console.log(cont)
+	/* console.log(cont) */
 	const handleIncrement = () => {
 		setCount((contador) => contador + 1)
 	}
@@ -19,7 +19,7 @@ export default function HookUseEffect() {
 	return (
 		<div className='ejercicio'>
 			<h3>
-				<i>&#39;UseState&#39;</i>
+				<i>&#39;UseEffect&#39;</i>
 			</h3>
 			<br />
 			<p>

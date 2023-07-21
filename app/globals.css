@@ -38,6 +38,10 @@ a:hover {
 	opacity: 0.65;
 }
 
+article{
+	display: grid;
+	place-items: center;
+}
 h1 {
 	margin: 0;
 	padding: 0 3rem 1rem 2rem;

@@ -2,13 +2,13 @@
 	text-align: center;
 }
 
-.App-logo-title {
-	animation: App-logo-spin2 infinite 3s linear;
-	height: 20px;
-	
+.loading {
+	animation: loading-animate infinite 2s linear;
+	width: auto;
+	height: 45px;	
 }
 
-@keyframes App-logo-spin2 {
+@keyframes loading-animate {
 	from {
 		transform: rotate(0deg);
 	}
@@ -43,7 +43,7 @@
 	border-top: thin solid #0d6d8c;
 	border-bottom: thin solid #0d6d8c;
 	margin: 2rem auto;
-	width: 330px;
+	width: 320px;
 	padding: 0.5rem 1rem;
 	text-align: center;
 }
