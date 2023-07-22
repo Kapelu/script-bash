@@ -16,7 +16,7 @@ function Usuarios({avatar, name}) {
 export default function PeticionesAsincronas() {
 	const [usuarios, setUsuarios] = useState([])
 
-	useEffect(() => {
+	/* useEffect(() => {
 		let url = '/json/user.json'
 		fetch(url)
 			.then((res) => res.json())
@@ -36,7 +36,7 @@ export default function PeticionesAsincronas() {
 						)
 				})
 			})
-	}, [])
+	}, []) */
 	return (
 		<div className='ejercicio'>
 			{usuarios.length === 0 ? (
