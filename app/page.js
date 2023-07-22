@@ -2,7 +2,7 @@ import Componente from '@/app/components/Componente'
 import Propiedades from './components/Propiedades'
 import HookUseState from './components/HookUseState'
 import HookUseEffect from './components/HookUseEffect'
-import PeticionesAsincronas from './components/PetcionesAsincronas'
+import PeticionesAsincronas from './components/PeticionesAsincronas'
 
 export default function Home() {
 	return (

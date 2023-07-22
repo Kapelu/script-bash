@@ -1,42 +1,44 @@
-[
-	{
-		"id": 1,
-		"name": "Thomás",
-		"avatar": "https://randomuser.me/api/portraits/men/10.jpg"
-	},
-	{
-		"id": 2,
-		"name": "Agustin",
-		"avatar": "https://randomuser.me/api/portraits/men/11.jpg"
-	},
-	{
-		"id": 3,
-		"name": "Misael",
-		"avatar": "https://randomuser.me/api/portraits/men/12.jpg"
-	},
-	{
-		"id": 4,
-		"name": "Keiko",
-		"avatar": "https://randomuser.me/api/portraits/men/13.jpg"
-	},
-	{
-		"id": 5,
-		"name": "Martina",
-		"avatar": "https://randomuser.me/api/portraits/women/10.jpg"
-	},
-	{
-		"id": 6,
-		"name": "Belén",
-		"avatar": "https://randomuser.me/api/portraits/women/11.jpg"
-	},
-	{
-		"id": 7,
-		"name": "Lucia",
-		"avatar": "https://randomuser.me/api/portraits/women/12.jpg"
-	},
-	{
-		"id": 8,
-		"name": "Tatiana",
-		"avatar": "https://randomuser.me/api/portraits/women/13.jpg"
-	}
-]
+{
+	"user": [
+		{
+			"id": 1,
+			"name": "Thomás",
+			"avatar": "https://randomuser.me/api/portraits/men/10.jpg"
+		},
+		{
+			"id": 2,
+			"name": "Agustin",
+			"avatar": "https://randomuser.me/api/portraits/men/11.jpg"
+		},
+		{
+			"id": 3,
+			"name": "Misael",
+			"avatar": "https://randomuser.me/api/portraits/men/12.jpg"
+		},
+		{
+			"id": 4,
+			"name": "Keiko",
+			"avatar": "https://randomuser.me/api/portraits/men/13.jpg"
+		},
+		{
+			"id": 5,
+			"name": "Martina",
+			"avatar": "https://randomuser.me/api/portraits/women/10.jpg"
+		},
+		{
+			"id": 6,
+			"name": "Belén",
+			"avatar": "https://randomuser.me/api/portraits/women/11.jpg"
+		},
+		{
+			"id": 7,
+			"name": "Lucia",
+			"avatar": "https://randomuser.me/api/portraits/women/12.jpg"
+		},
+		{
+			"id": 8,
+			"name": "Tatiana",
+			"avatar": "https://randomuser.me/api/portraits/women/13.jpg"
+		}
+	]
+}
