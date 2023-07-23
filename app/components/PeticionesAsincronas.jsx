@@ -6,8 +6,8 @@ import React, {useState, useEffect} from 'react'
 
 function Usuarios({avatar, name}) {
 	return (
-		<figure>
-			<Image src={avatar} alt={name} />
+		<figure className='avatar'>
+			<Image src={avatar} alt={name} width={100} height={100} />
 			<figcaption>{name}</figcaption>
 		</figure>
 	)
@@ -16,32 +16,46 @@ function Usuarios({avatar, name}) {
 export default function PeticionesAsincronas() {
 	const [usuarios, setUsuarios] = useState([])
 
-	/* useEffect(() => {
+	useEffect(() => {
 		let url = '/json/user.json'
+		/*let url = 'https://jsonplaceholder.typicode.com/users'
+		 */
 		fetch(url)
-			.then((res) => res.json())
+			.then((res) => {
+				return res.ok
+					? res.json()
+					: Promise.reject(res) /* validar el error */
+			})
 			.then((json) => {
 				console.log(json)
-				json.user.forEach((el) => {
-					fetch(el.url)
-						.then((res) => res.json())
+				json.forEach((element) => {
+					fetch(element.url)
+						.then((res) => {
+							let json = res.json()
+						})
 						.then((json) => {
-							let usuarios = {
-								id: json.id,
-								name: json.name,
-								avatar: json.avatar,
+							let usuario = {
+								id: element.id,
+								name: element.name,
+								avatar: element.avatar,
 							}
-							setUsuarios((pokemons)=>[...pokemons, usuarios])
-						}
-						)
+							setUsuarios((usuarios) => [...usuarios, usuario])
+						})
 				})
 			})
-	}, []) */
+			.catch((err) => {
+				let message = fetch.statusText || 'Ocurrio un error!!!'
+				console.log(message)
+			})
+			.finally(() => {
+				console.log('Esto se ejecuta independiente del resultado !!!')
+			})
+
+	}, [])
 	return (
 		<div className='ejercicio'>
 			{usuarios.length === 0 ? (
 				<div>
-					<p>Cargando...</p>
 					<Image
 						src={logoReact}
 						className='loading'
@@ -50,10 +64,11 @@ export default function PeticionesAsincronas() {
 						alt='logo'
 						priority={true}
 					/>
+					<p className='loader'>Cargando...</p>
 				</div>
 			) : (
-				pokemons.map((el) => (
-					<Usuarios key={el.id} nema={el.name} avatar={el.avatar} />
+				usuarios.map((el) => (
+					<Usuarios key={el.id} name={el.name} avatar={el.avatar} />
 				))
 			)}
 		</div>

@@ -2,19 +2,8 @@
 	text-align: center;
 }
 
-.loading {
-	animation: loading-animate infinite 2s linear;
-	width: auto;
-	height: 45px;
-}
-
-@keyframes loading-animate {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+.avatar{
+	border-radius: 100%;
 }
 
 .clases {
@@ -39,6 +28,7 @@
 	border-bottom: medium solid #0d6d8c;
 }
 
+
 .titulo {
 	border-top: thin solid #0d6d8c;
 	border-bottom: thin solid #0d6d8c;
@@ -49,7 +39,7 @@
 }
 
 /*
-$ CARD de Componente
+$ Componente CARD
 */
 
 .card {
@@ -105,4 +95,27 @@ $ CARD de Componente
 
 .card:hover:after {
 	content: 'Soy un componente de ReactJs';
+}
+
+/*
+$ Componente LOADER 
+*/
+
+.loading {
+	animation: loading-animate infinite 2s linear;
+	width: auto;
+	height: 45px;
+}
+
+.loader{
+	font-size: .8rem;
+}
+
+@keyframes loading-animate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
