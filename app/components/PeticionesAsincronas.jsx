@@ -7,7 +7,13 @@ import React, {useState, useEffect} from 'react'
 function Usuarios({avatar, name}) {
 	return (
 		<figure className='avatar'>
-			<Image src={avatar} alt={name} width={100} height={100} />
+			<Image
+				className='imagen'
+				src={avatar}
+				alt={name}
+				width={75}
+				height={75}
+			/>
 			<figcaption>{name}</figcaption>
 		</figure>
 	)
@@ -27,11 +33,11 @@ export default function PeticionesAsincronas() {
 					: Promise.reject(res) /* validar el error */
 			})
 			.then((json) => {
-				console.log(json)
+				/* console.log(json) */
 				json.forEach((element) => {
-					fetch(element.url)
+					fetch(url)
 						.then((res) => {
-							let json = res.json()
+							res.json()
 						})
 						.then((json) => {
 							let usuario = {
@@ -47,10 +53,9 @@ export default function PeticionesAsincronas() {
 				let message = fetch.statusText || 'Ocurrio un error!!!'
 				console.log(message)
 			})
-			.finally(() => {
+			/* .finally(() => {
 				console.log('Esto se ejecuta independiente del resultado !!!')
-			})
-
+			}) */
 	}, [])
 	return (
 		<div className='ejercicio'>
@@ -67,8 +72,12 @@ export default function PeticionesAsincronas() {
 					<p className='loader'>Cargando...</p>
 				</div>
 			) : (
-				usuarios.map((el) => (
-					<Usuarios key={el.id} name={el.name} avatar={el.avatar} />
+				usuarios.map((elem) => (
+					<Usuarios
+						key={elem.id}
+						name={elem.name}
+						avatar={elem.avatar}
+					/>
 				))
 			)}
 		</div>
