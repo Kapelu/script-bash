@@ -84,9 +84,10 @@ export default function PeticionesAsincronas() {
 	}, [])
 
 	return (
-		<div className='ejercicio'>
+		<div className='contenedor'>
+			<div className='ejercicio-async'>
 			{usuarios.length === 0 ? (
-				<div>
+				<div className='card-user'>
 					<Image
 						src={logoReact}
 						className='loading'
@@ -106,6 +107,7 @@ export default function PeticionesAsincronas() {
 					/>
 				))
 			)}
+		</div>
 		</div>
 	)
 }
