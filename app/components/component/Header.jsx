@@ -15,6 +15,7 @@ export default function Header() {
 					className='App-logo-react'
 					alt='logo'
 					priority={true}
+					as='image'
 				/>
 				<span>&nbsp;&&nbsp;&nbsp;&nbsp;</span>
 				<Image
@@ -22,6 +23,7 @@ export default function Header() {
 					className='App-logo-next'
 					alt='logo'
 					priority={true}
+					as='image'
 				/>
 			</div>
 		</header>

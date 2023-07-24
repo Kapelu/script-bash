@@ -22,28 +22,29 @@ function Usuarios({avatar, name}) {
 export default function PeticionesAsincronas() {
 	const [usuarios, setUsuarios] = useState([])
 
-	useEffect(() => {
+	/* 	
+	$ ****************    PETICION con FETCH    ****************
+		useEffect(() => {
 		let url = '/json/user.json'
-		/*let url = 'https://jsonplaceholder.typicode.com/users'
-		 */
+		
 		fetch(url)
 			.then((res) => {
 				return res.ok
 					? res.json()
-					: Promise.reject(res) /* validar el error */
+					: Promise.reject(res) /* validar el error 
 			})
 			.then((json) => {
-				/* console.log(json) */
-				json.forEach((element) => {
+				/* console.log(json) 
+				json.forEach((user) => {
 					fetch(url)
 						.then((res) => {
 							res.json()
 						})
 						.then((json) => {
 							let usuario = {
-								id: element.id,
-								name: element.name,
-								avatar: element.avatar,
+								id: user.id,
+								name: user.name,
+								avatar: user.avatar,
 							}
 							setUsuarios((usuarios) => [...usuarios, usuario])
 						})
@@ -55,8 +56,33 @@ export default function PeticionesAsincronas() {
 			})
 			/* .finally(() => {
 				console.log('Esto se ejecuta independiente del resultado !!!')
-			}) */
+			}) 
+	}, []) */
+
+	/* 	
+	$ ****************    PETICION con FETCH ASINCRONA    ****************
+	*/
+	useEffect(() => {
+		const getUser = async (url) => {
+			let res = await fetch(url)
+			let json = await res.json()
+
+			/* console.log(json) */ 
+			json.forEach(async (user) => {
+				let res = await fetch(url)
+				let json = await res.json()
+
+				let usuario = {
+					id: user.id,
+					name: user.name,
+					avatar: user.avatar,
+				}
+				setUsuarios((usuarios) => [...usuarios, usuario])
+			})
+		}
+		getUser('/json/user.json')
 	}, [])
+
 	return (
 		<div className='ejercicio'>
 			{usuarios.length === 0 ? (
