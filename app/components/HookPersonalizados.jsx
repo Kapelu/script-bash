@@ -19,7 +19,7 @@ function Usuarios({avatar, name}) {
 	)
 }
 
-export default function HookPerzonalizados() {
+export default function HookPersonalizados() {
 
 	return (
 		<div className='ejercicio'>

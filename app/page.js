@@ -3,7 +3,7 @@ import Propiedades from './components/Propiedades'
 import HookUseState from './components/HookUseState'
 import HookUseEffect from './components/HookUseEffect'
 import PeticionesAsincronas from './components/PeticionesAsincronas'
-import HookPerzonalizados from './components/HookPersonalizados'
+import HookPersonalizados from './components/HookPersonalizados'
 
 export default function Home() {
 	return (
@@ -47,7 +47,7 @@ export default function Home() {
 				</article>
 				<article>
 					<h2 className='titulo'>&nbsp;Hooks Personalizados&nbsp;</h2>
-					<HookPerzonalizados />
+					<HookPersonalizados />
 					<br />
 				</article>
 
