@@ -2,7 +2,7 @@
 import './style.css'
 import Image from 'next/image'
 import logoReact from '@/public/react.svg'
-import React, {useState, useEffect} from 'react'
+import {useFetch} from '@/app/hooks/useFetch'
 
 function Usuarios({avatar, name}) {
 	return (
@@ -20,10 +20,20 @@ function Usuarios({avatar, name}) {
 }
 
 export default function HookPersonalizados() {
+	//console.log(useFetch());
+	let url = '/json/user.json'
+
+	let {data, isPending, error} = useFetch(url)
 
 	return (
 		<div className='ejercicio'>
-			<h3>Hooks Personalizados</h3>
+			<h3>
+				<i>{JSON.stringify(isPending)}</i>
+			</h3>
+			<h3>
+				<mark>{JSON.stringify(error)}</mark>
+			</h3>
+			<h3 className='hook-async-personalisado'>{JSON.stringify(data)}</h3>
 		</div>
 	)
 }

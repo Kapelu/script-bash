@@ -46,7 +46,7 @@ export default function Home() {
 					<br />
 				</article>
 				<article>
-					<h2 className='titulo'>&nbsp;Hooks Personalizados&nbsp;</h2>
+				<h2 className='titulo'>&nbsp;Peticiones Asincronas con Hooks Personalizados&nbsp;</h2>
 					<HookPersonalizados />
 					<br />
 				</article>

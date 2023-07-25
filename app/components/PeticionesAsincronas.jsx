@@ -85,9 +85,9 @@ export default function PeticionesAsincronas() {
 
 	return (
 		<div className='contenedor'>
-			<div className='ejercicio-async'>
+			<div className='hook-async'>
 			{usuarios.length === 0 ? (
-				<div className='card-user'>
+				<div>
 					<Image
 						src={logoReact}
 						className='loading'

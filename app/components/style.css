@@ -6,10 +6,16 @@
 	border-radius: 100%;
 }
 
-.ejercicio-async {
+.hook-async {
 	display: grid;
 	grid-template-columns: repeat(2, 48%);
 	justify-content: space-between;
+}
+.hook-async-personalisado {
+	display: grid;
+	grid-template-columns: repeat(1, 100%);
+	justify-content: space-between;
+	font-size: .5rem;
 }
 
 .clases {
@@ -64,6 +70,11 @@
 		display: grid;
 		grid-template-columns: repeat(4, 24%);
 		justify-content: space-between;
+	}
+	.hook-async-personalisado {
+		display: flex;
+		justify-content: center;
+		font-size: 1rem;
 	}
 }
 
