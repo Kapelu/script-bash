@@ -8,7 +8,7 @@ import '@/app/components/component/header.css'
 export default function Header() {
 	return (
 		<header className='App-header'>
-			<h1>Welcome </h1>
+			<h1>Welcome !!!</h1>
 			<div className='logos'>
 				<Image
 					src={logoReact}

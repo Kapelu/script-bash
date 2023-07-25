@@ -1,13 +1,17 @@
 .App-header {
-	background-color: #0d6d8c;
+	position: fixed;
+	z-index: 999;
+	padding: 1rem;
+	width: 100%;
 	font-size: 20px;
-	height: 8rem;
 	padding: 20px;
 	color: white;
 	text-align: center;
+	height: 8rem;
+	background-color: #0d6d8c;
 }
 
-.logos{
+.logos {
 	display: inline-flex;
 	align-items: center;
 	justify-content: space-between;
@@ -15,12 +19,12 @@
 
 .App-logo-react {
 	animation: App-logo-spin infinite 9s linear;
-    width: auto;
+	width: auto;
 	height: 40px;
 }
 
 .App-logo-next {
-    width: auto;
+	width: auto;
 	height: 23px;
 }
 
