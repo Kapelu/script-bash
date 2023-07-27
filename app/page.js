@@ -4,6 +4,7 @@ import HookUseState from './components/HookUseState'
 import HookUseEffect from './components/HookUseEffect'
 import PeticionesAsincronas from './components/PeticionesAsincronas'
 import HookPersonalizados from './components/HookPersonalizados'
+import Referencias from './components/Referencias'
 
 export default function Home() {
 	return (
@@ -41,18 +42,35 @@ export default function Home() {
 					<br />
 				</article>
 				<article>
-					<h2 className='titulo'>&nbsp;Peticiones Asincronas con Hooks&nbsp;</h2>
+					<h2 className='titulo'>
+						&nbsp;Peticiones Asincronas con Hooks&nbsp;
+					</h2>
 					<PeticionesAsincronas />
 					<br />
 				</article>
 				<article>
-				<h2 className='titulo'>&nbsp;Peticiones Asincronas con Hooks Personalizados&nbsp;</h2>
+					<h2 className='titulo'>
+						&nbsp;Peticiones Asincronas&nbsp;
+						<br />
+						&nbsp;con&nbsp;
+						<br />
+						&nbsp;Hook Personalizados&nbsp;
+					</h2>
 					<HookPersonalizados />
+					<br />
+				</article>
+				<article>
+					<h2 className='titulo'>
+						&nbsp;Referencias&nbsp;
+						<br />
+						&nbsp;- Menú Responsivo -&nbsp;
+					</h2>
+					<Referencias />
 					<br />
 				</article>
 
 				{/* 
-				article>
+				<article>
 					<h2 className='titulo'>&nbsp;X&nbsp;</h2>
 					<Componente />
 					<br />
