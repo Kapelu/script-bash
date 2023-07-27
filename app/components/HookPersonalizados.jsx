@@ -28,12 +28,14 @@ export default function HookPersonalizados() {
 	return (
 		<div className='ejercicio'>
 			<h3>
-				<i>{JSON.stringify(isPending)}</i>
+				<i>Estado {JSON.stringify(isPending)}</i>
 			</h3>
+			<br />
 			<h3>
 				<mark>{JSON.stringify(error)}</mark>
 			</h3>
-			<h3 className='hook-async-personalisado'>{JSON.stringify(data)}</h3>
+			<br />
+			<h3 className='hook-async-personalizado'>{JSON.stringify(data)}</h3>
 		</div>
 	)
 }

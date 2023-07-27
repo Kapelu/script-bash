@@ -12,7 +12,7 @@ export const useFetch = (url) => {
 
 				if (!res.ok) {
 					throw {
-						err: true,
+						error: true,
 						status: res.status,
 						statusText: !res.statusText
 							? 'Ocurrio un Error'
@@ -20,13 +20,12 @@ export const useFetch = (url) => {
 					}
 				}
 				let data = await res.json()
-
-				setIsPending(false)
+				setIsPending('Cargado correctamente')
+				setError('Sin Errores') /* {err: false} */
 				setData(data)
-				setError('Sin Errores')   /* {err: false} */
-			} catch (err) {
-				setIsPending(true)
-				setError(err)
+			} catch (error) {
+				setIsPending('Error al cargar')
+				setError(error)
 			}
 		}
 		getData(url)

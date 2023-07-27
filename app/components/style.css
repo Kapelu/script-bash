@@ -11,11 +11,17 @@
 	grid-template-columns: repeat(2, 48%);
 	justify-content: space-between;
 }
-.hook-async-personalisado {
+.hook-async-personalizado {
 	display: grid;
 	grid-template-columns: repeat(1, 100%);
 	justify-content: space-between;
 	font-size: .5rem;
+}
+
+.hook-line {
+	width: 230px;
+	margin: 2rem auto;
+	border-bottom: medium solid #0d6d8c;
 }
 
 .clases {
@@ -42,11 +48,7 @@
 	align-items: center;
 }
 
-.hook-line {
-	width: 230px;
-	margin: 2rem auto;
-	border-bottom: medium solid #0d6d8c;
-}
+
 
 .titulo {
 	border-top: thin solid #0d6d8c;
@@ -58,7 +60,7 @@
 }
 
 @media screen and (min-width: 768px) {
-	.ejercicio-async {
+	.hook-async  {
 		display: grid;
 		grid-template-columns: repeat(3, 30%);
 		justify-content: space-between;
@@ -66,12 +68,12 @@
 }
 
 @media screen and (min-width: 1024px) {
-	.ejercicio-async {
+	.hook-async  {
 		display: grid;
 		grid-template-columns: repeat(4, 24%);
 		justify-content: space-between;
 	}
-	.hook-async-personalisado {
+	.hook-async-personalizado {
 		display: flex;
 		justify-content: center;
 		font-size: 1rem;

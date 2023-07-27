@@ -13,6 +13,7 @@ function Usuarios({avatar, name}) {
 				alt={name}
 				width={75}
 				height={75}
+				as='image'
 			/>
 			<figcaption>{name}</figcaption>
 		</figure>
@@ -67,7 +68,7 @@ export default function PeticionesAsincronas() {
 			let res = await fetch(url)
 			let json = await res.json()
 
-			/* console.log(json) */ 
+			/* console.log(json) */
 			json.forEach(async (user) => {
 				let res = await fetch(url)
 				let json = await res.json()
@@ -86,28 +87,29 @@ export default function PeticionesAsincronas() {
 	return (
 		<div className='contenedor'>
 			<div className='hook-async'>
-			{usuarios.length === 0 ? (
-				<div>
-					<Image
-						src={logoReact}
-						className='loading'
-						width='auto'
-						height='auto'
-						alt='logo'
-						priority={true}
-					/>
-					<p className='loader'>Cargando...</p>
-				</div>
-			) : (
-				usuarios.map((elem) => (
-					<Usuarios
-						key={elem.id}
-						name={elem.name}
-						avatar={elem.avatar}
-					/>
-				))
-			)}
-		</div>
+				{usuarios.length === 0 ? (
+					<div>
+						<Image
+							src={logoReact}
+							className='loading'
+							width='auto'
+							height='auto'
+							alt='logo'
+							priority={true}
+							as='image'
+						/>
+						<p className='loader'>Cargando...</p>
+					</div>
+				) : (
+					usuarios.map((elem) => (
+						<Usuarios
+							key={elem.id}
+							name={elem.name}
+							avatar={elem.avatar}
+						/>
+					))
+				)}
+			</div>
 		</div>
 	)
 }
