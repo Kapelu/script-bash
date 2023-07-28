@@ -4,7 +4,7 @@ import HookUseState from './components/HookUseState'
 import HookUseEffect from './components/HookUseEffect'
 import PeticionesAsincronas from './components/PeticionesAsincronas'
 import HookPersonalizados from './components/HookPersonalizados'
-import Referencias from './components/Referencias'
+import HookUseRef from './components/HookUseRef'
 
 export default function Home() {
 	return (
@@ -39,6 +39,8 @@ export default function Home() {
 					<HookUseState titulo='Clicks' />
 					<div className='hook-line'></div>
 					<HookUseEffect />
+					<div className='hook-line'></div>
+					<HookUseRef />
 					<br />
 				</article>
 				<article>
@@ -59,15 +61,7 @@ export default function Home() {
 					<HookPersonalizados />
 					<br />
 				</article>
-				<article>
-					<h2 className='titulo'>
-						&nbsp;Referencias&nbsp;
-						<br />
-						&nbsp;- Menú Responsivo -&nbsp;
-					</h2>
-					<Referencias />
-					<br />
-				</article>
+				
 
 				{/* 
 				<article>
