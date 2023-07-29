@@ -5,6 +5,7 @@ import HookUseEffect from './components/HookUseEffect'
 import PeticionesAsincronas from './components/PeticionesAsincronas'
 import HookPersonalizados from './components/HookPersonalizados'
 import HookUseRef from './components/HookUseRef'
+import Formulario from './components/Formulario'
 
 export default function Home() {
 	return (
@@ -61,7 +62,12 @@ export default function Home() {
 					<HookPersonalizados />
 					<br />
 				</article>
-				
+				<article>
+					<h2 className='titulo'>&nbsp;Formulario&nbsp;</h2>
+					<Formulario />
+					<br />
+				</article>
+
 
 				{/* 
 				<article>
@@ -71,6 +77,16 @@ export default function Home() {
 				</article>
 
 				*/}
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
 			</section>
 		</main>
 	)

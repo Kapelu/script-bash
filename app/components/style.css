@@ -48,7 +48,9 @@
 	align-items: center;
 }
 
-.menu {
+
+
+.menu{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -65,7 +67,7 @@
 }
 
 .referencia-enlaces {
-	padding: .5rem;
+	padding: 0.5rem;
 	color: #ffffff;
 	text-decoration: none;
 	transition: all 0.25s ease-out;
@@ -73,7 +75,7 @@
 
 .referencia-enlaces:hover {
 	padding: 5px;
-	border: .25rem ridge #d4dc32d8;
+	border: 0.25rem ridge #d4dc32d8;
 	border-radius: 10px;
 	background-color: #d4dc3241;
 	color: #000;
@@ -157,6 +159,50 @@ $ Componente CARD
 
 .card:hover:after {
 	content: 'Soy un componente de ReactJs';
+}
+
+/*
+$ Componente INPUT
+*/
+
+.checkbox {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #0D6D8C;
+	border-radius: 5px;
+	background-color: transparent;
+	display: inline-block;
+	position: relative;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+.checkbox:before {
+	content: '';
+	background-color: #0d6c8c8c;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	width: 10px;
+	height: 10px;
+	border-radius: 3px;
+	transition: all 0.3s ease-in-out;
+}
+
+.checkbox:checked:before {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.checkbox-label {
+	font-size: 18px;
+	color: #333232;
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+	align-items: center;
 }
 
 /*
