@@ -15,7 +15,7 @@ export default function Footer() {
 					href='https://danielcalderon.vercel.app/'
 					target='_blank'
 					rel='noopener noreferrer preload'
-					as="fetch"
+					as="https://danielcalderon.vercel.app/"
 				>
 					@Kapelu
 				</Link>
@@ -28,7 +28,7 @@ export default function Footer() {
 					href='https://github.com/Kapelu/ReactJs'
 					target='_blank'
 					rel='noopener noreferrer preload'
-					as="fetch"
+					as="https://github.com/Kapelu/ReactJs"
 					
 				>
 					<Image

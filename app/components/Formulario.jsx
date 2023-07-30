@@ -5,6 +5,8 @@ import React, {useState} from 'react'
 export default function Formulario() {
 	const [nombre, setNombre] = useState('')
 	const [sabor, setSabor] = useState('')
+	const [lenguaje, setLenguaje] = useState('')
+	const [terminos, setTerminos] = useState('false')
 
 	return (
 		<div className='ejercicio'>
@@ -23,7 +25,9 @@ export default function Formulario() {
 				/>
 				<br />
 				<br />
-				<span><i>Elige tu sabor JS Favorito</i></span>
+				<span>
+					<i>Elige tu sabor JS Favorito</i>
+				</span>
 				<br />
 				<br />
 				<div className='form'>
@@ -98,6 +102,44 @@ export default function Formulario() {
 						/>
 						Svelte
 					</label>
+				</div>
+				<br />
+				<div className='form'>
+					<span>
+						<i>Elige tu sabor JS Favorito</i>
+					</span>
+					<br />
+					<br />
+					<select
+						name='lenguaje'
+						onChange={(e) => setLenguaje(e.target.value)}
+						defaultValue=''
+					>
+						<option value=''> - - - </option>
+						<option value='js'>JavaScript</option>
+						<option value='php'>PHP</option>
+						<option value='py'>Python</option>
+						<option value='go'>GO</option>
+						<option value='rb'>Ruby</option>
+					</select>
+				</div>
+				<br />
+
+				<div className=''>
+					<label className='checkbox-label' htmlFor='terminos' onChange={(e) => setTerminos(e.target.checked)}>
+						<input
+							className='checkbox'
+							type='checkbox'
+							name='terminos'
+							id='terminos'
+						/>
+						<p>
+							<i>Acepto términos y condiciones.</i>
+						</p>
+					</label>
+
+					<br />
+					<br />
 				</div>
 			</form>
 			<br />
