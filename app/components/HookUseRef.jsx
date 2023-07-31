@@ -64,46 +64,46 @@ export default function HookUseRef() {
 			>
 				<Link
 					className='referencia-enlaces'
-					href='#'
+					href='https://danielcalderon.vercel.app/#inicio'
 					target='_blank'
 					rel='noopener noreferrer preload'
-					as='fetch'
+					as='https://danielcalderon.vercel.app/#inicio'
 				>
 					Sección 1
 				</Link>
 				<Link
 					className='referencia-enlaces'
-					href='#'
+					href='https://danielcalderon.vercel.app/#acerca'
 					target='_blank'
 					rel='noopener noreferrer preload'
-					as='fetch'
+					as='https://danielcalderon.vercel.app/#acerca'
 				>
 					Sección 2
 				</Link>
 				<Link
 					className='referencia-enlaces'
-					href='#'
+					href='https://danielcalderon.vercel.app/#servicios'
 					target='_blank'
 					rel='noopener noreferrer preload'
-					as='fetch'
-				>
+					as='https://danielcalderon.vercel.app/#servicios'
+					>
 					Sección 3
 				</Link>
 				<Link
 					className='referencia-enlaces'
-					href='#'
+					href='https://danielcalderon.vercel.app/#portafolio'
 					target='_blank'
 					rel='noopener noreferrer preload'
-					as='fetch'
+					as='https://danielcalderon.vercel.app/#portafolio'
 				>
 					Sección 4
 				</Link>
 				<Link
 					className='referencia-enlaces'
-					href='#'
+					href='https://danielcalderon.vercel.app/#contacto'
 					target='_blank'
 					rel='noopener noreferrer preload'
-					as='fetch'
+					as='https://danielcalderon.vercel.app/#contacto'
 				>
 					Sección 5
 				</Link>
