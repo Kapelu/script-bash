@@ -102,6 +102,21 @@ button:active {
 	border-bottom: 2px solid rgb(50, 50, 50);
 }
 
+/*
+$ **********************************************
+$ ***** Estilo de componentes de la página *****
+$ ********************************************** 
+*/
+
+.header {
+	position: fixed;
+	z-index: 999;
+	padding: 1rem;
+	width: 100%;
+	height: 5rem;
+	background-color: #0d6d8c;
+}
+
 /* .Container {
 	text-align:justify;
 	font-size: large; 
