@@ -157,7 +157,7 @@ export default function Formulario() {
 */
 
 export default function Formulario() {
-	const [form, setForm] = useState({})
+	const [form, setForm] = useState({})     //{nombre:''}
 
 	const handleChange = e=>{
 		setForm({
@@ -183,8 +183,8 @@ export default function Formulario() {
 					type='text'
 					id='nombre'
 					name='nombre'
-					//value={nombre}
-					onChange={(e) => setNombre(e.target.value)}
+					value={form.nombre}
+					onChange={handleChange}
 				/>
 				<br />
 				<br />
@@ -201,7 +201,7 @@ export default function Formulario() {
 							id='vanilla'
 							name='sabor'
 							value='vanilla'
-							onChange={(e) => setSabor(e.target.value)}
+							onChange={handleChange}
 						/>
 						Vanilla
 					</label>
@@ -213,7 +213,7 @@ export default function Formulario() {
 							id='react'
 							name='sabor'
 							value='react'
-							onChange={(e) => setSabor(e.target.value)}
+							onChange={handleChange}
 						/>
 						React
 					</label>
@@ -225,7 +225,7 @@ export default function Formulario() {
 							id='next'
 							name='sabor'
 							value='next'
-							onChange={(e) => setSabor(e.target.value)}
+							onChange={handleChange}
 						/>
 						Next
 					</label>
@@ -237,7 +237,7 @@ export default function Formulario() {
 							id='angular'
 							name='sabor'
 							value='angular'
-							onChange={(e) => setSabor(e.target.value)}
+							onChange={handleChange}
 						/>
 						Ángular
 					</label>
@@ -249,7 +249,7 @@ export default function Formulario() {
 							id='vue'
 							name='sabor'
 							value='vue'
-							onChange={(e) => setSabor(e.target.value)}
+							onChange={handleChange}
 						/>
 						Vue
 					</label>
@@ -261,7 +261,7 @@ export default function Formulario() {
 							id='svelte'
 							name='sabor'
 							value='svelte'
-							onChange={(e) => setSabor(e.target.value)}
+							onChange={handleChange}
 						/>
 						Svelte
 					</label>
@@ -275,7 +275,7 @@ export default function Formulario() {
 					<br />
 					<select
 						name='lenguaje'
-						onChange={(e) => setLenguaje(e.target.value)}
+						onChange={handleChange}
 						defaultValue=''
 					>
 						<option value=''> - - - </option>
@@ -289,7 +289,7 @@ export default function Formulario() {
 				<br />
 
 				<div className=''>
-					<label className='checkbox-label' htmlFor='terminos' onChange={(e) => setTerminos(e.target.checked)}>
+					<label className='checkbox-label' htmlFor='terminos' onChange={handleChange}>
 						<input
 							className='checkbox'
 							type='checkbox'

@@ -1,14 +1,14 @@
-/* import React from 'react'; */
+/* import React from 'react'; 
 import Image from 'next/image'
 import logoReact from '@/public/react.svg'
-import logoNext from '@/public/next.svg'
+import logoNext from '@/public/next.svg'*/
 import '@/app/globals.css'
 import '@/app/components/component/header.css'
 
 export default function Header() {
 	return (
 		<header className='App-header'>
-			<h1>Welcome !!!</h1>
+			{/* <h1>Welcome !!!</h1>
 			<div className='logos'>
 				<Image
 					src={logoReact}
@@ -25,7 +25,12 @@ export default function Header() {
 					priority={true}
 					as='image'
 				/>
-			</div>
+			</div> */}
+
+
+
+
+			
 		</header>
 	)
 }
