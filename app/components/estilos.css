@@ -1,0 +1,14 @@
+.estilos span {
+	padding: 0.5rem;
+	font-size: 1rem;
+	font-weight: 800;
+	color: #0d6d8c;
+}
+
+.bg-react {
+	display: flex;
+	justify-content: flex-start;
+	margin: 0.2rem;
+	width: 320px;
+	background-color: #61dafb;
+}
