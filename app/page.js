@@ -6,6 +6,7 @@ import PeticionesAsincronas from './components/PeticionesAsincronas'
 import HookPersonalizados from './components/HookPersonalizados'
 import HookUseRef from './components/HookUseRef'
 import Formulario from './components/Formulario'
+import Estilos from './components/Estilos'
 
 export default function Home() {
 	return (
@@ -67,7 +68,12 @@ export default function Home() {
 					<Formulario />
 					<br />
 				</article>
-
+				
+				<article>
+					<h2 className='titulo'>&nbsp;Estilos <i>&#39;css&#39;</i>&nbsp;</h2>
+					<Estilos />
+					<br />
+				</article>
 
 				{/* 
 				<article>
