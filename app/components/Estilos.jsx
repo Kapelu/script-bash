@@ -1,8 +1,9 @@
 'use client'
+import Link from 'next/link'
 import './estilos.css'
 
 export default function Estilos() {
-	let variableStyle = {
+	let myStyle = {
 		borderRadius: '.5rem',
 		backgroundColor: '#6e8060',
 	}
@@ -23,12 +24,28 @@ export default function Estilos() {
 					</i>
 				</span>
 			</article>
-			<article className='bg-react' style={variableStyle}>
+			<article className='bg-react' style={myStyle}>
 				<span>
 					<i style={{color: '#fff'}}>
 						Estilos en línea con variables
 						&#39;style=&#123;&#125;&#39;
 					</i>
+				</span>
+			</article>
+			<article className='bg-react'>
+				<span>
+					<i /* style={{color: '#fff'}} */>
+						Agregando normalize.css 👉🏼
+					</i>
+					<Link
+						className='link'
+						href='https://github.com/Kapelu/ReactJs'
+						target='_blank'
+						rel='noopener noreferrer preload'
+						as='https://github.com/Kapelu/ReactJs'
+					>
+						📝 (doc)
+					</Link>
 				</span>
 			</article>
 		</div>
