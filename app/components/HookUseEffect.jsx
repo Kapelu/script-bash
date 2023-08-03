@@ -1,5 +1,4 @@
 'use client'
-import './style.css'
 import React, {useState, useEffect} from 'react'
 
 export default function HookUseEffect() {

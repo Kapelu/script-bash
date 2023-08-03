@@ -1,5 +1,4 @@
 'use client'
-import './style.css'
 import Image from 'next/image'
 import logoReact from '@/public/react.svg'
 import React, {useState, useEffect} from 'react'
@@ -91,14 +90,14 @@ export default function PeticionesAsincronas() {
 					<div>
 						<Image
 							src={logoReact}
-							className='loading'
+							className='hook-async-personalizado-loading'
 							width='auto'
 							height='auto'
 							alt='logo'
 							priority={true}
 							as='image'
 						/>
-						<p className='loader'>Cargando...</p>
+						<p className='hook-async-personalizado-loader'>Cargando...</p>
 					</div>
 				) : (
 					usuarios.map((elem) => (

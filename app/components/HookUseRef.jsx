@@ -1,5 +1,4 @@
 'use client'
-import './style.css'
 import Link from 'next/link'
 import React, {createRef, crreateRef, useRef} from 'react'
 

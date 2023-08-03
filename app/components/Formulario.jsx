@@ -1,5 +1,4 @@
 'use client'
-import './style.css'
 import React, {useState} from 'react'
 
 /* 

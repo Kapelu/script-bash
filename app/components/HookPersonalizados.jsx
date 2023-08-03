@@ -1,5 +1,4 @@
 'use client'
-import './style.css'
 import Image from 'next/image'
 import logoReact from '@/public/react.svg'
 import {useFetch} from '@/app/hooks/useFetch'
