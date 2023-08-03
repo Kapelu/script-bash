@@ -39,10 +39,10 @@ export default function Estilos() {
 					</i>
 					<Link
 						className='link'
-						href='https://github.com/Kapelu/ReactJs'
+						href='https://github.com/Kapelu/ReactJs/blob/main/public/assets/normalize.md'
 						target='_blank'
 						rel='noopener noreferrer preload'
-						as='https://github.com/Kapelu/ReactJs'
+						as='https://github.com/Kapelu/ReactJs/blob/main/public/assets/normalize.md'
 					>
 						📝 (doc)
 					</Link>

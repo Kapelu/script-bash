@@ -12,3 +12,7 @@ Cree un componente de aplicación personalizado y luego simplemente importe su a
 // pages/_app.js 
 import 'normalize.css/normalize.css';
 ```
+<br />
+fuente: 
+
+[Stanislav Khromov](https://snippets.khromov.se/using-normalize-css-in-a-next-js-application/)
