@@ -1,5 +1,3 @@
-/* import React from 'react';
- */
 import logoReact from '@/public/react.svg'
 import logoNext from '@/public/next.svg'
 import Image from 'next/image'
