@@ -14,32 +14,29 @@ export default function Footer() {
 					href='https://danielcalderon.vercel.app/'
 					target='_blank'
 					rel='noopener noreferrer preload'
-					as="https://danielcalderon.vercel.app/"
+					as='https://danielcalderon.vercel.app/'
 				>
 					@Kapelu
 				</Link>
 			</small>
 			<br />
-			<small className='repositorio' >
-				Repositorio en  &nbsp;
+			<small className='repositorio'>
+				Repositorio en &nbsp;
 				<Link
 					className='link'
 					href='https://github.com/Kapelu/ReactJs'
 					target='_blank'
 					rel='noopener noreferrer preload'
-					as="https://github.com/Kapelu/ReactJs"
-					
+					as='https://github.com/Kapelu/ReactJs'
 				>
 					<Image
-					src={logoGithub}
-					className='App-logo-github'
-					alt='logo'
-					priority={true}
-					as='image'
-				/>
-					
+						src={logoGithub}
+						className='App-logo-github'
+						alt='logo'
+						priority={true}
+						as='image'
+					/>
 				</Link>
-				
 			</small>
 		</footer>
 	)
