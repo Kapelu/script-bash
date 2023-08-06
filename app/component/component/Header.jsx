@@ -7,10 +7,9 @@ import '@/app/components/component/header.css'
 export default function Header() {
 	return (
 		<header className='header'>
+			<h1>Bienvenidos !!!</h1>
 			<div className='logos'>
-				<h1>
-					Curso de
-				</h1>
+				<h2>Curso de</h2>
 				<Image
 					src={logoReact}
 					className='App-logo-react'
@@ -18,7 +17,7 @@ export default function Header() {
 					priority={true}
 					as='image'
 				/>
-				<p style={{paddingRight:'1rem'}}>&</p>
+				<p style={{paddingRight: '1rem'}}>&</p>
 				<Image
 					src={logoNext}
 					className='App-logo-next'
@@ -27,8 +26,7 @@ export default function Header() {
 					as='image'
 				/>
 			</div>
-			<span style={{color: '#ffffff', padding: '.1rem'}}>Parte I</span>
-			{/* <h1>Welcome !!!</h1> */}
+			{/* <span style={{color: '#ffffff', padding: '.1rem'}}>Parte I</span> */}
 		</header>
 	)
 }
