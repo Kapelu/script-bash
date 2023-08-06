@@ -1,11 +1,8 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
-export default function Home() {
+export default function Modulo01() {
 	return (
 		<>
 			<aside>
-				<h1>home</h1>
+				<h1>Módulo 01</h1>
 			</aside>
 		</>
 	)
