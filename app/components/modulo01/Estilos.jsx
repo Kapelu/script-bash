@@ -1,6 +1,9 @@
 'use client'
 import Link from 'next/link'
 import './estilos.css'
+import './estilos.scss'
+
+import moduleStyle from './estilos.module.css'
 
 export default function Estilos() {
 	let myStyle = {
@@ -34,7 +37,7 @@ export default function Estilos() {
 			</article>
 			<article className='bg-react'>
 				<span>
-					<i /* style={{color: '#fff'}} */>
+					<i /* style={{background-color: '#797979'}} */>
 						Agregando normalize.css 👉🏼
 					</i>
 					<Link
@@ -46,6 +49,25 @@ export default function Estilos() {
 					>
 						📝 (doc)
 					</Link>
+				</span>
+			</article>
+			<article className='bg-react' style={{backgroundColor: '#797979'}}>
+				<span className='span-css'>
+					<i className={moduleStyle.error} style={{color: '#fff'}}>
+						Estilos con &#39;Módulos&#39; &#187; Error &#171;
+					</i>
+					<br />
+					<i className={moduleStyle.success} style={{color: '#fff'}}>
+						Estilos con &#39;Módulos&#39; &#187; Success &#171;
+					</i>
+				</span>
+			</article>
+			<article className='bg-sass'>
+				<span>
+					<i style={{color: '#fff'}}>
+						Estilos con &#39;SASS&#39;
+					</i>
+					
 				</span>
 			</article>
 		</div>

@@ -1,16 +1,10 @@
-/* .App-header {
-	position: fixed;
-	z-index: 999;
-	padding: 1rem;
-	width: 100%;
-	font-size: 20px;
-	padding: 20px;
-	color: white;
-	text-align: center;
-	height: 8rem;
-	background-color: #0d6d8c;
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--first-color);
 }
-} */
 
 .logos {
 	display: flex;

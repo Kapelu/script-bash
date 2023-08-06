@@ -5,7 +5,15 @@
 	color: #0d6d8c;
 }
 
+.span-css {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	text-align: left;
+}
+
 .bg-react {
+	border-radius: .5rem;
 	display: flex;
 	justify-content: flex-start;
 	margin: 0.2rem;

@@ -1,8 +1,8 @@
-Este es un proyecto de [Next.js](https://nextjs.org/) iniciado con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Empezando
+## Getting Started
 
-Primero, ejecute el servidor de desarrollo:
+First, run the development server:
 
 ```bash
 npm run dev
@@ -12,23 +12,23 @@ yarn dev
 pnpm dev
 ```
 
-Abra [http://localhost:3000](http://localhost:3000) con su navegador para ver los resultados.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Puede comenzar a editar la página modificando `app/page.js`. La página se actualiza automáticamente a medida que edita el archivo.
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-Este proyecto utiliza [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) para optimizar y cargar automáticamente Inter, una fuente personalizada de Google.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Aprende más
+## Learn More
 
-Para obtener más información sobre Next.js, eche un vistazo a los siguientes recursos:
+To learn more about Next.js, take a look at the following resources:
 
-* [Documentación de Next.js] (https://nextjs.org/docs): obtenga información sobre las funciones y la API de Next.js.
-* [Learn Next.js] (https://nextjs.org/learn): un tutorial interactivo de Next.js.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Puede consultar [el repositorio Next.js GitHub](https://github.com/vercel/next.js/) - ¡Sus comentarios y contribuciones son bienvenidos!
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Implementar en Vercel
+## Deploy on Vercel
 
-La forma más fácil de implementar su aplicación Next.js es usar la [Plataforma Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) de los creadores de Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Consulte nuestra [documentación de implementación de Next.js](https://nextjs.org/docs/deployment) para obtener más detalles.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
