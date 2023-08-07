@@ -1,12 +1,12 @@
-import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function Home() {
 	return (
 		<>
-			<section>
-				<h1>Home page</h1>
-			</section>
+			<article className={styles.home}>
+				<h1 style={{textAlign:'center'}}>Home Page</h1>
+				
+			</article>
 		</>
 	)
 }
