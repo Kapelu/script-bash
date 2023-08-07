@@ -19,6 +19,7 @@ export default function RootLayout({children}) {
 				<main className='main'>
 					<Navbar />
 					<section className='section'>{children}</section>
+					<div style={{borderRight: '1px solid var(--first-color)'}}></div>
 				</main>
 				<Footer />
 			</body>

@@ -2,7 +2,7 @@ import logoReact from '@/public/react.svg'
 import logoNext from '@/public/next.svg'
 import Image from 'next/image'
 import '@/app/globals.css'
-import '@/app/components/component/header.css'
+import '@/app/components/header.css'
 
 export default function Header() {
 	return (

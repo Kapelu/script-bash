@@ -62,12 +62,15 @@ h1 {
 
 h2 {
 	margin: 0;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
+	color: #0d6d8c;
 }
 
 h3 {
 	margin: 0;
-	font-size: 1rem;
+	padding: 0;
+	font-size: 1.25rem;
+	color: #3660af;
 }
 
 h4 {
@@ -90,6 +93,22 @@ p {
 	line-height: 1.6;
 }
 
+span {
+	padding: 0;
+	font-size: 1.2rem;
+	color: #4b4b4b;
+}
+
+ul {
+	color: #12323f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+}
+
 /* 
 $ ********** Estilos de la página **********
 */
@@ -99,21 +118,39 @@ $ ********** Estilos de la página **********
 	margin-left: auto;
 	margin-right: auto;
 	max-width: var(--max-width);
-    min-height: calc(100vh - 7.5rem); 
+	min-height: calc(100vh - 8.5rem);
 	display: flex;
 	flex-direction: row;
 }
 
-.section{
-	border: 5px solid #501464;
-	padding-top: 2.5rem;
-	padding-left: 2rem;
+.section {
+	/* border: 2px solid #501464;*/
+	margin-bottom: 1rem;
+	padding: 1rem 2rem 1rem;
 	width: 100%;
-	height: calc(100vh - 7.5rem);
-	/* display: flex;
-	flex-direction: row; */
+	height: calc(100vh - 8.5rem);
+	overflow-y: scroll;
 }
 
+button,
+button:focus {
+	margin: 0.5rem;
+	font-size: 17px;
+	padding: 10px 25px;
+	border-radius: 0.7rem;
+	background-image: linear-gradient(#b7c0c4, #0d6d8c);
+	border: 1px solid rgb(50, 50, 50);
+	border-bottom: 5px solid rgb(50, 50, 50);
+	transform: translate(0, -3px);
+	transition: 0.2s;
+	transition-timing-function: linear;
+}
+
+button:active {
+	margin: 0.5rem;
+	transform: translate(0, 0);
+	border-bottom: 2px solid rgb(50, 50, 50);
+}
 @media screen and (min-width: 1024px) {
 	.full-lg-screen {
 		width: 100%;
@@ -137,13 +174,13 @@ $ ********** Estilos de la página **********
 $ ********** Utilitarios **********
 */
 ::-webkit-scrollbar {
-	width: 0px;
+	width: 0;
 }
 ::-webkit-scrollbar-track {
-	background: #fff;
+	background: var(--backgroundColor);
 }
 ::-webkit-scrollbar-thumb {
-	background: #fff;
+	background: var(--backgroundColor);
 }
 
 .btn,
@@ -166,8 +203,6 @@ $ ********** Utilitarios **********
 	border-bottom: 2px solid rgb(50, 50, 50);
 }
 
-
-
 .text-center {
 	text-align: center;
 }
@@ -179,4 +214,3 @@ $ ********** Utilitarios **********
 .text-right {
 	text-align: right;
 }
-

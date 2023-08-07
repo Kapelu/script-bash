@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logoGithub from '@/public/github.svg'
 import '@/app/globals.css'
-import '@/app/components/component/footer.css'
+import '@/app/components/footer.css'
 
 export default function Footer() {
 	return (

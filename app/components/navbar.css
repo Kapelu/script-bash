@@ -1,14 +1,12 @@
 .navbar{
 	/* border:  5px solid #501464;  */
-    padding-top: 2rem;
-    width: 10.5rem;
-    min-height: calc(100vh - 7.75rem); 
+    padding-top: 1rem;
+    width: 15rem;
+    height: calc(100vh - 7.75rem); 
     display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: var(--backgroundColor);	
-	border-left: 1px solid #0D6D8C;
-	border-right: 1px solid #0D6D8C;
+	overflow-x: scroll;
 }
 
 .btn-menu,
@@ -28,8 +26,7 @@
 
 .btn-menu:active {
     
-    color:var(--gray-color);/* 
-    background-color: #043d50; */
+    color:var(--gray-color);
 	margin: 0.5rem;
 	transform: translate(0, 0);
 	border-bottom: 2px solid rgb(50, 50, 50);

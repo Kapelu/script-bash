@@ -6,7 +6,7 @@ import './estilos.scss'
 import moduleStyle from './estilos.module.css'
 
 export default function Estilos() {
-	let myStyle = {
+	const myStyle = {
 		borderRadius: '.5rem',
 		backgroundColor: '#6e8060',
 	}

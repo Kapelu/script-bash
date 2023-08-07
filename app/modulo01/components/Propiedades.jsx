@@ -4,8 +4,8 @@ export default function Propiedades(props) {
 	return (
 		
 			<ul>
-				<li>{props.porDefecto}</li>
-				<br />
+				{/* <li>{props.porDefecto}</li>
+				<br /> */}
 				<li>{props.cadena}</li>
 				<br />
 				<li>{props.numero}</li>
@@ -27,6 +27,8 @@ export default function Propiedades(props) {
 	)
 }
 
+/* 
+$ Será removida la propiedad defaultProps en un futuro
 Propiedades.defaultProps = {
 	porDefecto: '" props por defecto dentro de un objeto "',
-}
+} */
