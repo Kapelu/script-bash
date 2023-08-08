@@ -9,8 +9,8 @@
 	overflow-x: scroll;
 }
 
-.btn-menu,
-.btn-menu:focus {
+.btn-navbar,
+.btn-navbar:focus {
     width: 150px;
 	margin: 0.5rem;
 	font-size: 17px;
@@ -24,7 +24,7 @@
 	transition-timing-function: linear;
 }
 
-.btn-menu:active {
+.btn-navbar:active {
     
     color:var(--gray-color);
 	margin: 0.5rem;

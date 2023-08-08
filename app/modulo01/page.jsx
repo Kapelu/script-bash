@@ -14,15 +14,16 @@ import Menu from '../components/Menu'
 export default function Home() {
 	return (
 		<main className='App'>
+			<div className='menu-fijo'>
+				<Menu />
+			</div>
 			<section className='clases'>
-				<div><Menu /></div>
-				
-				<article className='articulos' id='01'>
+				<article className='articulos' id='componente'>
 					<h2 className='titulo'>&nbsp;Componente&nbsp;</h2>
 					<Componente msg='Soy un componente de ReactJs' />
 					<br />
 				</article>
-				<article className='articulos' id='02'>
+				<article className='articulos' id='propiedades'>
 					<h2 className='titulo'>&nbsp;Propiedades&nbsp;</h2>
 					<Propiedades
 						cadena='Esto es una cadena de texto'
@@ -41,7 +42,7 @@ export default function Home() {
 					/>
 					<br />
 				</article>
-				<article className='articulos' id='03'>
+				<article className='articulos' id='hooks'>
 					<h2 className='titulo'>&nbsp;Hook&nbsp;</h2>
 					<HookUseState titulo='Clicks' />
 					<div className='hook-line'></div>
@@ -50,14 +51,14 @@ export default function Home() {
 					<HookUseRef />
 					<br />
 				</article>
-				<article className='articulos' id='04'>
+				<article className='articulos' id='peticiones-asincronas-con-hooks'>
 					<h2 className='titulo'>
 						&nbsp;Peticiones Asincronas con Hooks&nbsp;
 					</h2>
 					<PeticionesAsincronas />
 					<br />
 				</article>
-				<article className='articulos' id='05'>
+				<article className='articulos' id='peticiones-asincronas-con-hooks-personalizados'>
 					<h2 className='titulo'>
 						&nbsp;Peticiones Asincronas&nbsp;
 						<br />
@@ -68,13 +69,13 @@ export default function Home() {
 					<HookPersonalizados />
 					<br />
 				</article>
-				<article className='articulos' id='06'>
+				<article className='articulos' id='formularios'>
 					<h2 className='titulo'>&nbsp;Formulario&nbsp;</h2>
 					<Formulario />
 					<br />
 				</article>
 
-				<article className='articulos' id='07'>
+				<article className='articulos' id='estilos-css'>
 					<h2 className='titulo'>
 						&nbsp;Estilos <i>&#39;css&#39;</i>&nbsp;
 					</h2>
