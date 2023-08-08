@@ -1,14 +1,14 @@
 'use client'
 import './styles.css'
-import Componente from '@/app/modulo01/components/Componente'
-import Propiedades from '@/app/modulo01/components/Propiedades'
-import HookUseState from '@/app/modulo01/components/HookUseState'
-import HookUseEffect from '@/app/modulo01/components/HookUseEffect'
-import PeticionesAsincronas from '@/app/modulo01/components/PeticionesAsincronas'
-import HookPersonalizados from '@/app/modulo01/components/HookPersonalizados'
-import HookUseRef from '@/app/modulo01/components/HookUseRef'
-import Formulario from '@/app/modulo01/components/Formulario'
-import Estilos from '@/app/modulo01/components/Estilos'
+import Componente from '@/app/conceptos-basicos/components/Componente'
+import Propiedades from '@/app/conceptos-basicos/components/Propiedades'
+import HookUseState from '@/app/conceptos-basicos/components/HookUseState'
+import HookUseEffect from '@/app/conceptos-basicos/components/HookUseEffect'
+import PeticionesAsincronas from '@/app/conceptos-basicos/components/PeticionesAsincronas'
+import HookPersonalizados from '@/app/conceptos-basicos/components/HookPersonalizados'
+import HookUseRef from '@/app/conceptos-basicos/components/HookUseRef'
+import Formulario from '@/app/conceptos-basicos/components/Formulario'
+import Estilos from '@/app/conceptos-basicos/components/Estilos'
 import Menu from '../components/Menu'
 
 export default function Home() {
@@ -90,7 +90,7 @@ export default function Home() {
 				</article>
 				*/}
 			</section>
-			<div style={{borderRight: '1px solid var(--first-color)'}}></div>
+			{/* <div style={{borderRight: '1px solid var(--first-color)'}}></div> */}
 		</main>
 	)
 }

@@ -10,12 +10,13 @@ export default function Navbar() {
 				<Link className='btn-navbar' href='/'>
 					Home
 				</Link>
-				<Link className='btn-navbar' href='/modulo01'>
+				<Link className='btn-navbar' href='/conceptos-basicos'>
 					Módulo 01
 				</Link>
 				<Link className='btn-navbar' href='/modulo02'>
 					Módulo 02
 				</Link>
+				{/*
 				<Link className='btn-navbar' href='/modulo03'>
 					Módulo 03
 				</Link>
@@ -25,7 +26,6 @@ export default function Navbar() {
 				<Link className='btn-navbar' href='/modulo05'>
 					Módulo 05
 				</Link>
-				{/*
 				<Link className='btn-navbar' href='/modulo06'>
 					Módulo 06
 				</Link>

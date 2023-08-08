@@ -1,42 +1,62 @@
 [
 	{
-		"id": 1,
+		"id": "01",
 		"name": "Keiko",
 		"avatar": "https://randomuser.me/api/portraits/men/40.jpg"
 	},
 	{
-		"id": 2,
+		"id": "02",
 		"name": "Thomás",
 		"avatar": "https://randomuser.me/api/portraits/men/41.jpg"
 	},
 	{
-		"id": 3,
+		"id": "03",
 		"name": "Agustin",
 		"avatar": "https://randomuser.me/api/portraits/men/42.jpg"
 	},
 	{
-		"id": 4,
+		"id": "04",
 		"name": "Misael",
 		"avatar": "https://randomuser.me/api/portraits/men/43.jpg"
 	},
 	{
-		"id": 5,
+		"id": "12",
+		"name": "Daniel",
+		"avatar": "https://randomuser.me/api/portraits/men/69.jpg"
+	},
+	{
+		"id": "05",
 		"name": "Martina",
 		"avatar": "https://randomuser.me/api/portraits/women/20.jpg"
 	},
 	{
-		"id": 6,
+		"id": "06",
 		"name": "Belén",
 		"avatar": "https://randomuser.me/api/portraits/women/21.jpg"
 	},
 	{
-		"id": 7,
+		"id": "07",
 		"name": "Lucia",
 		"avatar": "https://randomuser.me/api/portraits/women/22.jpg"
 	},
 	{
-		"id": 8,
+		"id": "08",
 		"name": "Tatiana",
 		"avatar": "https://randomuser.me/api/portraits/women/13.jpg"
+	},
+	{
+		"id": "09",
+		"name": "Margarita",
+		"avatar": "https://randomuser.me/api/portraits/women/33.jpg"
+	},
+	{
+		"id": "10",
+		"name": "Susana",
+		"avatar": "https://randomuser.me/api/portraits/women/35.jpg"
+	},
+	{
+		"id": "11",
+		"name": "Elena",
+		"avatar": "https://randomuser.me/api/portraits/women/48.jpg"
 	}
 ]

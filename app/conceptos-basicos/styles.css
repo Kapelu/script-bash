@@ -6,6 +6,8 @@
 }
 
 .articulos{
+	/* border:  5px solid #501464; */
+	padding: 1rem;
 	scroll-snap-align: start;
     min-height: 90vh;
 }
@@ -78,6 +80,8 @@
 }
 
 .menu {
+	/* border:  5px solid #501464; */
+	padding: 1rem 0;
 	position: fixed;
 	display: flex;
 	flex-direction: column;

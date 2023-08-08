@@ -113,22 +113,21 @@ ul {
 $ ********** Estilos de la página **********
 */
 .main {
-	/* border:  5px solid #501464;  */
-	padding-top: 4rem;
+	/* border:  5px solid #501464; */
+	padding-top: 3.7rem;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: var(--max-width);
-	min-height: calc(100vh - 8.5rem);
+	min-height: calc(100vh - 7rem);
 	display: flex;
 	flex-direction: row;
 }
 
 .section {
-	/* border: 2px solid #501464;*/
-	margin-bottom: 1rem;
-	padding: 1rem 2rem 1rem;
+	/* border:  5px solid #501464; */
+	padding: 0rem 2rem 1rem;
 	width: 100%;
-	height: calc(100vh - 8.5rem);
+	height: calc(100vh - 7rem);
 	overflow-y: scroll;
 }
 
