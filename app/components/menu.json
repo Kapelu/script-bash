@@ -27,6 +27,10 @@
 		"07": {
 			"name": "07",
 			"link": "#estilos-css"
+		},
+		"08": {
+			"name": "08",
+			"link": "#styled-component"
 		}
 	}
 ]

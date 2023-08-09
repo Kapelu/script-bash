@@ -34,6 +34,7 @@
 }
 
 .ejercicio {
+	padding-top: 2.5rem;
 	color: #12323f;
 	display: flex;
 	flex-direction: column;

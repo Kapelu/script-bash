@@ -10,6 +10,7 @@ import HookUseRef from '@/app/conceptos-basicos/components/HookUseRef'
 import Formulario from '@/app/conceptos-basicos/components/Formulario'
 import Estilos from '@/app/conceptos-basicos/components/Estilos'
 import Menu from '../components/Menu'
+import ComponentesEstilizados from './components/ComponentesEstilizados'
 
 export default function Home() {
 	return (
@@ -74,7 +75,6 @@ export default function Home() {
 					<Formulario />
 					<br />
 				</article>
-
 				<article className='articulos' id='estilos-css'>
 					<h2 className='titulo'>
 						&nbsp;Estilos <i>&#39;css&#39;</i>&nbsp;
@@ -82,8 +82,15 @@ export default function Home() {
 					<Estilos />
 					<br />
 				</article>
+				<article className='articulos' id='styled-component'>
+					<h2 className='titulo'>&nbsp;Styled Component&nbsp;</h2>
+					<ComponentesEstilizados />
+					<br />
+				</article>
+
+
 				{/* 
-				<article className='articulos'>
+				<article className='articulos' id=''>
 					<h2 className='titulo'>&nbsp;X&nbsp;</h2>
 					<Componente />
 					<br />
