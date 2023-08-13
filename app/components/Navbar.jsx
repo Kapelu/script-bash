@@ -14,7 +14,7 @@ export default function Navbar() {
 				<Link className='btn-navbar' href='/conceptos-basicos'>
 					Conceptos Básicos
 				</Link>
-				<Link className='btn-navbar' href='https://react-js-framework-css.vercel.app/'>
+				<Link className='btn-navbar' href='/framework-css'>
 					Frameworks CSS
 				</Link>
 				{/*

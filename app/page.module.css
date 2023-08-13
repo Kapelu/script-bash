@@ -27,5 +27,5 @@
 }
 
 .lista li i{
-	color: blue;
+	color: var(--first-color);
 }
