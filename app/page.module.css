@@ -1,6 +1,31 @@
-.home{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+.home {
+	padding-top: 2.5rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.titulo {
+	border-top: thin solid #0d6d8c;
+	border-bottom: thin solid #0d6d8c;
+	margin: 0.1rem auto;
+	width: 320px;
+	padding: 0.5rem 1rem;
+	text-align: center;
+}
+
+.lista {
+	padding-left: 5rem;
+	padding-right: 5rem;
+	list-style: '✔';
+}
+
+.lista li {
+	text-align: justify;
+	padding: 0.5rem;
+}
+
+.lista li i{
+	color: blue;
 }

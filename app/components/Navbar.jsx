@@ -8,13 +8,14 @@ export default function Navbar() {
 			<div style={{borderLeft: '1px solid var(--first-color)'}}></div>
 			<nav className='navbar'>
 				<Link className='btn-navbar' href='/'>
+				{/* <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z"/></svg> */}
 					Home
 				</Link>
 				<Link className='btn-navbar' href='/conceptos-basicos'>
-					Módulo 01
+					Conceptos Básicos
 				</Link>
-				<Link className='btn-navbar' href='/modulo02'>
-					Módulo 02
+				<Link className='btn-navbar' href='https://react-js-framework-css.vercel.app/'>
+					Frameworks CSS
 				</Link>
 				{/*
 				<Link className='btn-navbar' href='/modulo03'>
