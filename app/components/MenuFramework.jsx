@@ -1,6 +1,6 @@
 'use client'
 import './menu.css'
-import menu from '@/app/components/menu-react.json'
+import menu from '@/app/components/menu-framework.json'
 import Link from 'next/link'
 
 export default function Menu() {

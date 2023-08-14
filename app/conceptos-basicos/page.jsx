@@ -9,14 +9,13 @@ import HookPersonalizados from '@/app/conceptos-basicos/components/HookPersonali
 import HookUseRef from '@/app/conceptos-basicos/components/HookUseRef'
 import Formulario from '@/app/conceptos-basicos/components/Formulario'
 import Estilos from '@/app/conceptos-basicos/components/Estilos'
-import Menu from '../components/Menu'
-import Framework from './components/Framework'
+import MenuBasico from '../components/MenuBasico'
 
 export default function Home() {
 	return (
 		<main className='App'>
 			<div className='menu-fijo'>
-				<Menu />
+				<MenuBasico />
 			</div>
 			<section className='clases'>
 				<article className='articulos' id='componente'>
