@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200;1,500&display=swap');
+
+/* ********** Custom Properties ********** */
+:root {
+	--first-color: #61DAFB;
+	--first-alpha-color: #61DAFB70;
+	--second-color: #428296;
+	--second-alpha-color: #42829670;
+	--third-color: #68ddbd;
+	--third-alpha-color: #68ddbd70;
+
+	--white-color: #fff;
+	--white-alpha-color: rgba(255, 255, 255, 0.5);
+
+	--black-color: #000;
+	--black-alpha-color: rgba(0, 0, 0, 0.5);
+
+	--gray-color: #ccc;
+	--gray-light-color: #f3f3f3;
+	--gray-dark-color: #666;
+
+	--link-color: #509ee3;
+
+	--title-color: #333;
+
+	--text-color: #222;
+
+	--font: 'Raleway', sans-serif;
+
+	--max-width: 1200px;
+	--header-height: 4rem;
+
+	/*
+	$ Colores de Card
+	*/
+
+	--card-title-color: #83083b;
+	--card-text-color: #000000cc;
+	--card-price-color: #1f1f1fcc;
+	--card-bg-color: #ebdede80;
+	--card-main-focus: #ebdede;
+}
+
+/* ********** Reset ********** */
+html {
+	box-sizing: border-box;
+	font-family: var(--font);
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	color: var(--text-color);
+  background-color: var(--gray-color);
+}
+
+a {
+	color: var(--link-color);
+	transition: all 0.5s ease-out;
+}
+
+a:hover {
+	opacity: 0.75;
+}
+
+h1 {
+	margin: 0;
+	font-size: 2rem;
+}
+
+h2 {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+h3 {
+	margin: 0;
+	font-size: 1.25rem;
+}
+
+h4 {
+	margin: 0;
+	font-size: 1rem;
+}
+
+h5 {
+	margin: 0;
+	font-size: 0.85rem;
+}
+
+h6 {
+	margin: 0;
+	font-size: 0.7rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+p {
+	line-height: 1.6;
+}
+
+/* 
+$ ********** Utilitarios **********
+*/
+::-webkit-scrollbar {
+	width: 0;
+}
+::-webkit-scrollbar-track {
+	background: var(--backgroundColor);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--backgroundColor);
+}
+
+.box-shadow-1 {
+	box-shadow: 0.25rem 0.25rem 1rem #00000050;
+}
+
+.btn {
+	border-radius: 0.5rem;
+	padding: 1rem;
+	display: inline-block;
+	width: 200px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: var(--white-color);
+	background-color: var(--second-color);
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--max-width);
+}
+
+.none {
+	display: none;
+}
