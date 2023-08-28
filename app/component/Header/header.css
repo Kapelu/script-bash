@@ -14,24 +14,32 @@
 	justify-content: space-between;
 	align-items: center;
 }
+.logo-react {
+	animation: logo-spin infinite 5s linear;
+	width: auto;
+	height: 40px;
+}
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
 
-/* .logo a {
+.logo a {
 	color: var(--first-color);
 	font-weight: bold;
 	font-size: 2rem;
 	text-decoration: none;
-} */
+}
 
 /*
 $ *************************************
 $ ********** Componente Menu **********
 $ ************************************* 
 */
-
-/* .menu{
-	display: none;
-} */
-
 .menu-btn {
 	outline: thin solid var(--first-color);
 	border: 0;
@@ -48,8 +56,8 @@ $ *************************************
 	left: 0;
 	bottom: var(--header-height);
 	width: 40%; 
-	border-radius: 0 25px 0 0; 
 	/*
+	border-radius: 0 25px 0 0; 
 	height: 80%;
 	*/
 	display: flex;

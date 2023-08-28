@@ -4,7 +4,7 @@ import menu from './headerMenu.json'
 import '@/app/component/Header/header.css'
 import Link from 'next/link'
 import Image from 'next/image'
-//import Logo from '@/public/assets/naty-alpha.png'
+import Logo from '@/public/react.svg'
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -24,24 +24,7 @@ export default function Header() {
 	return (
 		<header className='header'>
 			<section className='container'>
-				{/* <div className='logo'>
-					<Link
-						className='link'
-						href='/'
-						target='_blank'
-						rel='noopener noreferrer preload'
-						as='/'
-					>
-						{/* <Image
-							src={Logo}
-							className='img'
-							alt='logo'
-							width='48'
-							priority={true}
-							as='image'
-						/> }
-					</Link>
-				</div> */}
+				{/* */}
 				<button
 					className={`menu-btn`}
 					onClick={() => {
@@ -83,6 +66,24 @@ export default function Header() {
 						</Link>
 					))}
 				</nav>
+				<div className='logo'>
+					<Link
+						className='link'
+						href='/'
+						target='_blank'
+						rel='noopener noreferrer preload'
+						as='/'
+					>
+						<Image
+							src={Logo}
+							className='logo-react'
+							alt='Logo React'
+							width='48'
+							priority={true}
+							as='image'
+					/> 
+					</Link>
+				</div> 
 			</section>
 		</header>
 	)

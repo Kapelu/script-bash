@@ -62,7 +62,7 @@ export default function Contacto() {
 						</a>
 					</small>
 				</aside>
-				{/* <aside className='contact-card box-shadow-1'>
+				<aside className='contact-card box-shadow-1'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						width='24'
@@ -94,7 +94,7 @@ export default function Contacto() {
 							</svg>
 						</Link>
 					</small>
-				</aside> */}
+				</aside>
 			</article>
 			{/*
 			$ **********************   FORMULARIO CONTACTO   ********************** 

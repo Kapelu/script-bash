@@ -2,12 +2,12 @@
 	margin-bottom: var(--header-height);
 	padding: 0.5rem;
 	text-align: center;
-	color: var(--black-alpha-color);
-	background-color: var(--gray-color);
+	color: var(--white-alpha-color);
+	background-color: var(--gray-dark-color);
 }
 
 .link {
-	color: #7b4ea0;
+	color: #fbff00c2;
 	font-family: sans-serif;
 	font-weight: 600;
 	font-style: italic;

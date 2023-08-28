@@ -4,10 +4,6 @@
 			"name": "Inicio",
 			"link": "#inicio"
 		},
-		"carrito": {
-			"name": "Carrito",
-			"link": "#carrito"
-		},
 		"contacto": {
 			"name": "Contacto",
 			"link": "#contacto"
