@@ -1,0 +1,16 @@
+$color-sass: #bf4080;
+$color-sass-80: #bf408080;
+
+.bg-sass{
+    border-radius: .5rem;
+	display: flex;
+	justify-content: flex-start;
+	margin: 0.2rem;
+	width: 320px;
+    background-color: $color-sass;
+    transition: background-color .5seg ease-in-out;
+
+    &:hover{
+        background-color: $color-sass-80;
+    }
+}

@@ -1,0 +1,32 @@
+[
+	{
+		"01": {
+			"name": "01",
+			"link": "#componente"
+		},
+		"02": {
+			"name": "02",
+			"link": "#propiedades"
+		},
+		"03": {
+			"name": "03",
+			"link": "#hooks"
+		},
+		"04": {
+			"name": "04",
+			"link": "#peticiones-asincronas-con-hooks"
+		},
+		"05": {
+			"name": "05",
+			"link": "#peticiones-asincronas-con-hooks-personalizados"
+		},
+		"06": {
+			"name": "06",
+			"link": "#formularios"
+		},
+		"07": {
+			"name": "07",
+			"link": "#estilos-css"
+		}
+	}
+]

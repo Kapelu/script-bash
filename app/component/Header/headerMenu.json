@@ -2,11 +2,15 @@
 	{
 		"inicio": {
 			"name": "Inicio",
-			"link": "#inicio"
+			"link": "/inicio"
+		},
+		"conceptos-basicos": {
+			"name": "Conceptos Básicos",
+			"link": "/conceptos-basicos"
 		},
 		"contacto": {
 			"name": "Contacto",
-			"link": "#contacto"
+			"link": "/contacto"
 		}
 	}
 ]
