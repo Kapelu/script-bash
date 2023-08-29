@@ -69,10 +69,10 @@ export default function Header() {
 				<div className='logo'>
 					<Link
 						className='link'
-						href='/'
+						href='https://react.dev/'
 						target='_blank'
 						rel='noopener noreferrer preload'
-						as='/'
+						as='https://react.dev/'
 					>
 						<Image
 							src={Logo}

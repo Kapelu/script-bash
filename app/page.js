@@ -4,19 +4,18 @@ import Inicio from './inicio/page'
 import Contacto from './contacto/page'
 
 export default function Home() {
-  return (
-    <>
+	return (
+		<>
 			<section id='inicio' className='home'>
 				<Inicio />
 			</section>
-      <section id='contacto' className='contacto'>
+			<section id='contacto' className='contacto'>
 				<Contacto />
 			</section>
 
 			{/* <section id='cosmetica' className=''>
 				<Bazar />
 			</section> */}
-			
 		</>
-  )
+	)
 }
