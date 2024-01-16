@@ -1,0 +1,219 @@
+Explicamos el comando de Echo de Linux
+Las distribuciones de Linux te permiten instalar y dirigir el sistema por tu cuenta. El comando Echo de Bash es uno de los comandos más utilizados. Se utiliza en los scripts de Bash y en los archivos por lotes para mostrar el texto de estado en un archivo o en tu pantalla. En este artículo te explicamos cómo funciona el comando Echo de Linux y por ejemplo cómo usarlo para establecer colores para la fuente y el fondo.
+
+Índice
+¿Qué es el comando Echo y cómo funciona?
+¿Cómo se muestra texto e información en Linux con Echo?
+¿Qué caracteres de control hay para echo?
+¿Cómo se determinan los colores de la fuente y del fondo con echo?
+¿Cómo se establecen las distintas propiedades de texto?
+¿Qué es el comando Echo y cómo funciona?
+El comando Echo de Linux repite lo que se le encarga que repita. La función es extremadamente sencilla pero absolutamente necesaria. Sin Echo, por ejemplo, no se mostrarían visiblemente los scripts de Shell. Shell es la interfaz de usuario en la que pueden introducirse los distintos comandos, como el comando Tail de Linux, el comando Head de Linux, el comando Cat de Linux o el comando Echo de Linux.
+
+¿Cómo funciona exactamente el comando Echo de Linux y qué aspecto tiene? He aquí la sintaxis general del comando:
+
+echo [option] [string]
+Por cierto, la funcionalidad básica de echo es la misma en todos los lenguajes de programación: se introduce una entrada, que en la mayoría de los casos es en forma de cadena, y ésta se recibe y se muestra de nuevo sin cambios.
+
+ Nota
+La interfaz de usuario o el intérprete de la línea de comandos Shell también se conoce como Bash-Shell. Bash es el Shell estándar en las distribuciones de Linux y la ventana de texto en la que se introducen los comandos. El programa echo es una parte fundamental de Ubuntu y está preinstalado en todos los sistemas.
+
+¿Cómo se muestra texto e información en Linux con Echo?
+En nuestro primer ejemplo mostramos un texto y el contenido de las variables en el Bash o terminal. Para escribir el texto “Esto es un ejemplo”, introduce el siguiente código en el terminal:
+
+$ echo Esto es un ejemplo
+Esto es un ejemplo
+Para evitar errores más adelante, te recomendamos que pongas el texto entre comillas:
+
+$ echo “Esto es un ejemplo”
+Esto es un ejemplo
+En el siguiente paso, queremos mostrar una variable. Aquí basta con introducir el nombre de la variable, como PWD (de “print working directory” o imprimir directorio de trabajo). El comando tendría entonces el siguiente aspecto:
+
+$ echo $PWD 
+/Users/Name/Desktop
+También existe la posibilidad de combinar la visualización de variable con texto, como en este ejemplo:
+
+$ echo “Estás en el directorio: $PWD”
+Estás en el directorio: /Users/Name/Desktop
+ Nota
+Para mostrar información, no solo está el comando Echo de Bash, también printf y tput. tput es la herramienta más compleja y también puede utilizarse para restablecer la información. Sin embargo, printf y echo sólo pueden usarse para visualizar información.
+
+¿Qué caracteres de control hay para echo?
+Ya has entendido el principio básico del comando Echo de Linux, en el próximo paso aprenderás qué caracteres de control puedes utilizar en combinación con el comando. Por carácter de control nos referimos a los caracteres que no se ven directamente en la pantalla sino que designan conceptos como el inicio o final del texto o el salto de línea.
+
+Atención: Echo solo entiende a los caracteres de control que colocan la opción -e. En el siguiente ejemplo, “\n” solo se reproduce como texto. (El carácter de control “\n” indica una línea nueva, o un salto de línea).
+
+$ echo "\n" 
+\n
+Sin embargo, si añades una -e, como en el siguiente ejemplo, se producirá en tu texto un salto de texto:
+
+$ echo -e "\n" 
+ Nota
+El comando Echo suele terminar con un salto de texto. Para suprimirlo, puedes introducir el carácter de control \c al final de la salida correspondiente.
+
+He aquí un resumen de los caracteres de control a los que puedes acceder con tu Bash:
+
+Códigos escape
+
+Significado
+
+\a
+
+Sonido de alerta
+
+\b
+
+Retroceder
+
+\c
+
+Suprimir salto de texto
+
+\f
+
+Atrás
+
+\n
+
+Salto de línea
+
+\r
+
+Volver al inicio de línea
+
+\t
+
+Tabulador (horizontal)
+
+\v
+
+Tabulador (vertical)
+
+\\
+
+Ver carácter de barra invertida
+
+\0nnn
+
+Caracteres ASCII en forma octal (solo sh y ksk)
+
+\nnn
+
+Caracteres ASCII en forma octal (solo Bash)
+
+¿Cómo se determinan los colores de la fuente y del fondo con echo?
+Con el comando Echo de Linux, también se pueden determinar las características del texto, como los colores de la fuente y el fondo, en la visualización del texto. Esto se consigue entrecomillando todos los caracteres o escribiendo los colores en variables para que la cadena sea más legible. La primera variante tiene el siguiente aspecto (siempre se introduce un color con \033[, 31m aquí representa el color de fuente rojo):
+
+$ echo -e "\033[31mEsto es un texto rojo"
+Ahora, para reestablecer todos los atributos, introduce la siguiente cadena:
+
+$ echo -e "\033[0m"
+No obstante, es más legible si definimos los colores previamente como variable en el script de Bash:
+
+red='\033[31m'
+reset='\033[0m'
+Entonces, puedes accionar los colores simplemente con el comando Echo:
+
+$ echo -e "${red}Esto es un texto rojo.${reset}Y ahora el texto vuelve a ser normal."  
+A continuación resumimos los distintos códigos escape para los diversos colores de fuente y fondo:
+
+Carácter de control
+
+Significado
+
+\033[30m
+
+Color de fuente negro
+
+\033[31m
+
+Color de fuente rojo
+
+\033[32m
+
+Color de fuente verde
+
+\033[33m
+
+Color de fuente amarillo
+
+\033[34m
+
+Color de fuente azul
+
+\033[35m
+
+Color de fuente magenta
+
+\033[36m
+
+Color de fuente turquesa
+
+\033[37m
+
+Color de fuente blanco
+
+\033[40m
+
+Color de fondo negro
+
+\033[41m
+
+Color de fondo rojo
+
+\033[42m
+
+Color de fondo verde
+
+\033[43m
+
+Color de fondo amarillo
+
+\033[44m
+
+Color de fondo azul
+
+\033[45m
+
+Color de fondo magenta
+
+\033[46m
+
+Color de fondo turquesa
+
+\033[47m
+
+Color de fondo gris
+
+¿Cómo se establecen las distintas propiedades de texto?
+Además del color de la fuente y del fondo, con el comando de Linux Echo también pueden determinarse otras características del texto como la negrita o el subrayado. He aquí los códigos de distintas propiedades de texto:
+
+Caracteres de control
+
+Significado
+
+\033[0m
+
+Restaurar todas las características
+
+\033[1m
+
+Negrita
+
+\033[4m
+
+Subrayado
+
+\033[5m
+
+Parpadeo
+
+\033[7m
+
+Pantalla inversa
+
+Si quieres escribir el texto rojo en negrita, utiliza el siguiente código:
+
+$ echo -e "\033[1;31mEsto es un texto rojo en negrita." 
+ Consejo
+Hemos recopilado en un documento general todos los comandos importantes de Linux.RunJS

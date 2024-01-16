@@ -1,0 +1,32 @@
+#!/bin/bash
+
+dir="$(dirname "$0")"
+
+source $dir/functions/third-party-data/thirdparty-theme-data/icon-data/numix-circle-icon
+source $dir/functions/third-party-data/thirdparty-theme-data/icon-data/numix-icon
+source $dir/functions/third-party-data/thirdparty-theme-data/icon-data/paper-icon
+source $dir/functions/third-party-data/thirdparty-theme-data/icon-data/papirus-icon
+
+# Install Third-Party Theme
+function icon {
+    eval `resize`
+    ICON=$(whiptail \
+        --notags \
+        --title "Third-Party Installation" \
+        --menu "\nWhat third-party theme would you like to install?" \
+        --ok-button "Install" \
+        --cancel-button "Go Back" \
+        $LINES $COLUMNS $(( $LINES - 12 )) \
+        numix-circle-icon    'Numix circle icon theme' \
+        numix-icon           'Numix icon theme' \
+        paper-icon           'Paper icon theme' \
+        papirus-icon         'Papirus Suite icon theme' \
+        3>&1 1>&2 2>&3)
+
+    exitstatus=$?
+    if [ $exitstatus = 0 ]; then
+        clear && $ICON
+    else
+        clear && main
+    fi
+}

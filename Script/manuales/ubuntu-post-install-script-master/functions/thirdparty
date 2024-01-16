@@ -1,0 +1,52 @@
+#!/bin/bash
+
+dir="$(dirname "$0")"
+
+source $dir/functions/third-party-data/audio
+source $dir/functions/third-party-data/de
+source $dir/functions/third-party-data/development
+source $dir/functions/third-party-data/driver
+source $dir/functions/third-party-data/games
+source $dir/functions/third-party-data/graphic
+source $dir/functions/third-party-data/ide
+source $dir/functions/third-party-data/internet
+source $dir/functions/third-party-data/office
+source $dir/functions/third-party-data/security
+source $dir/functions/third-party-data/server
+source $dir/functions/third-party-data/system
+source $dir/functions/third-party-data/utilities
+source $dir/functions/third-party-data/video
+
+# Install third-party-data Applications
+function thirdparty {
+  eval `resize`
+  THIRDPARTY=$(whiptail \
+    --notags \
+    --title 'third-party-data Installation' \
+    --menu '\nWhat third-party-data software would you like to install?' \
+    --ok-button 'Install' \
+    --cancel-button 'Go Back' \
+  $LINES $COLUMNS $(( $LINES - 12 )) \
+    audio 'Audio software' \
+    de  'DE' \
+    development 'development software' \
+    driver  'driver software' \
+    games 'games software' \
+    graphic 'graphic software' \
+    ide 'IDE software' \
+    internet  'internet software' \
+    office  'office software' \
+    security  'security software' \
+    server  'server software' \
+    system  'system software' \
+    utilities 'utilities software' \
+    video 'Video software' \
+  3>&1 1>&2 2>&3)
+
+    exitstatus=$?
+    if [ $exitstatus = 0 ]; then
+        clear && $THIRDPARTY
+    else
+        clear && main
+    fi
+}

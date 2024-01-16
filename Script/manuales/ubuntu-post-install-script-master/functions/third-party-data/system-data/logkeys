@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Logkeys
+function logkeys {
+  # Update repository information
+  show_info 'Updating repository information...'
+  show_warning 'Requires root privileges'
+  sudo apt update
+  # Install
+  show_info 'Installing Logkeys...'
+  show_warning 'Requires root privileges'
+  sudo apt install -y logkeys
+  # Install Keymaps
+  show_info 'Downloading Logkeys...'
+  wget -O logkeys-master.zip https://github.com/kernc/logkeys/archive/master.zip
+  show_info 'Extraction Logkeys...'
+  unzip logkeys-master.zip
+  cd logkeys-master
+  mv keymaps $HOME/.keymap
+  # Back
+  cd -
+  # Cleanup and finish
+  rm -rf logkeys-master*
+  # Start
+  show_info 'Start Logkeys...'
+  show_warning 'Requires root privileges'
+  case `echo $LANG` in
+	  ru_RU.UTF-8)
+	      sudo logkeys --start --output $HOME/.logkeys.log --keymap=$HOME/.keymap/ru.map
+	        ;;
+	    en_US.UTF-8)
+	        sudo logkeys --start --output $HOME/.logkeys.log --keymap=$HOME/.keymap/en.map
+	        ;;
+			de_DE.UTF-8)
+			    sudo logkeys --start --output $HOME/.logkeys.log --keymap=$HOME/.keymap/de.map
+			    ;;
+	    *)
+	        ;;
+  esac
+  # Done
+  show_success 'Done.'
+  whiptail --title "Finished" --msgbox "Installation complete." 8 78
+  thirdparty
+}

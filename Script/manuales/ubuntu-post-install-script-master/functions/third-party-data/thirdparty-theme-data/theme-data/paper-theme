@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Paper Theme
+function paper-theme {
+  # Add repository
+  show_info 'Adding Adapta PPA to software sources...'
+  show_warning 'Requires root privileges'
+  sudo add-apt-repository -y ppa:snwh/pulp
+  # Update repository information
+  show_info 'Updating repository information...'
+  show_warning 'Requires root privileges'
+  sudo apt update
+  # Install
+  show_info 'Installing Adapta...'
+  show_warning 'Requires root privileges'
+  sudo apt install -y paper-gtk-theme
+  # Apply
+  show_info 'Apply Theme...'
+  gsettings set org.gnome.desktop.interface gtk-theme 'Paper'
+  gsettings set org.gnome.shell.extensions.user-theme name 'Paper'
+  # Done
+  show_success 'Done.'
+  whiptail --title "Finished" --msgbox "Installation complete." 8 78
+  thirdparty-theme
+}

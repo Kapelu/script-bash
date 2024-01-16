@@ -1,0 +1,7 @@
+/*RUNJS (Asi se instalan paquetes .deb)*/
+
+// INSTALACION
+sudo dpkg -i runjs_2.6.0_amd64.deb
+
+// DESINTALAR
+sudo dpkg -p runjs_2.6.0_amd64.deb

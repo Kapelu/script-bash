@@ -1,0 +1,59 @@
+{
+  "eslint.run": "onType",
+  "editor.minimap.enabled": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 13,
+  "editor.renderWhitespace": "trailing",
+  "editor.fontLigatures": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "emmet.includeLanguages": {
+    "erb": "html",
+    "ruby": "html"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Dracula",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "breadcrumbs.enabled": true,
+  "gitlens.views.repositories.files.layout": "list",
+  "solargraph.useBundler": true,
+  "solargraph.autoformat": true,
+  "solargraph.formatting": true,
+  "solargraph.checkGemVersion": false,
+  "ruby.format": "rubocop",
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true
+    }
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "castwide.solargraph"
+  },
+  "[js]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[jsx]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "sqltools.format": {
+    "linesBetweenQueries": 2,
+    "reservedWordCase": "upper",
+    "language": "sql"
+  },
+  "vscode-erb-beautify.keepBlankLines": 1
+}

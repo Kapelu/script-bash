@@ -1,0 +1,19 @@
+Vamos a poder descargar la versión gratuita o de pago siguiendo el siguiente enlace. También tendremos la opción de abrir una terminal (Ctrl+Alt+T) y escribir en ella:
+
+
+    > wget http://get.code-industry.net/public/master-pdf-editor-4.3.82_qt5.amd64.deb
+
+
+Una vez descargado el archivo a nuestro equipo, en la misma terminal escribimos:
+
+    > sudo dpkg -i master-pdf-editor-4.3.82_qt5.amd64.deb
+
+
+Para todos los usuarios, los creadores de este programa han puesto a disposición de quién lo necesite un manual. Este se puede consultar en el siguiente enlace.[https://code-industry.net/doc/MasterPDFEditor-UserManual_EN.pdf]
+-----------------------------------------------------------------------------------------------------
+Desinstalar Master PDF Editor
+Para eliminar este programa de nuestro sistema operativo no tendremos más que abrir una terminal (Ctrl+Alt+T). En ella solo habrá que escribir el siguiente comando:
+
+    > sudo apt purge master-pdf-editor
+
+Como intenté mostrar en este artículo, se trata de una opción a tener en cuenta a la hora de trabajar con archivos PDF. Nos proporciona un gran abanico de posibilidades a la hora tanto de editar documentos PDF como de crearlos.

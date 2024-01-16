@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# TeamViewer
+function teamviewer {
+  # Downloading
+  show_info 'Downloading TeamViewer...'
+  wget https://downloadus2.teamviewer.com/download/version_12x/teamviewer_12.0.71510_i386.deb
+  # Install package(s)
+  show_info 'Installing TeamViewer...'
+  show_warning 'Requires root privileges'
+  sudo dpkg -i teamviewer*.deb
+  sudo apt install -fy
+  # Cleanup and finish
+  rm teamviewer*.deb
+  # Done
+  show_success 'Done.'
+  whiptail --title "Finished" --msgbox "Installation complete." 8 78
+  thirdparty
+}

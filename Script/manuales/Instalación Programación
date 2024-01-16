@@ -1,0 +1,25 @@
+#**************************************
+# Actualizar VSCODE
+#**************************************
+
+* Descargar actualización  .deb package (64-bit) desde --> https://go.microsoft.com/fwlink/?LinkID=760868
+* ejecutar en la consola --> sudo apt install ./<file>.deb
+
+
+#*************************************************
+# Agregar asteriscos a la consola de Ubuntu
+#*************************************************
+
+* abrir la consola
+* escribir --> sudo visudo
+* modificar la linea --> Defaults        env_reset ==por==> Defaults        env_reset,pwfeedback
+* Ctrol+O para guardar, presionar Enter
+* Ctrol+X para salir.
+
+#*************************************************
+# Instalar Virtual Box
+#*************************************************
+
+sudo apt-get install virtualbox
+
+

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Atom
+function atom-text-editor {
+	# Add repository
+  show_info 'Adding Atom PPA to software sources...'
+  show_warning 'Requires root privileges'
+  sudo add-apt-repository -y ppa:webupd8team/atom
+	# Update repository information
+	show_info 'Updating repository information...'
+	show_warning 'Requires root privileges'
+	sudo apt update
+	# Install
+	show_info 'Installing Atom...'
+	show_warning 'Requires root privileges'
+	sudo apt install -y atom
+  # Done
+  show_success 'Done.'
+  whiptail --title "Finished" --msgbox "Installation complete." 8 78
+	thirdparty
+}
