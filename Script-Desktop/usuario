@@ -1,0 +1,16 @@
+#! /bin/bash
+# Estado de Usuario
+clear
+USUARIO=$(git config --global user.name )
+EMAIL=$(git config --global user.email)
+FECHA=$(date "+%d-%m-%Y")
+HORA=$(date "+%H:%M")
+i='\033[3m'
+verde='\033[32m'
+amarillo='\033[33m'
+magenta='\033[35m'
+reset='\033[0m'
+echo -e "$magenta╔═════════════════════════════════════════╗$reset"
+echo -e "$magenta│  USUARIO: $i$n$amarillo$USUARIO$reset$magenta                        │$reset"
+echo -e "$magenta│  E-MAIL : $i$n$verde$EMAIL$reset$magenta  │$reset"
+echo -e "$magenta╚═════════════════════════════════════════╝$reset"
