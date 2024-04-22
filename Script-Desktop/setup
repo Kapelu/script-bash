@@ -1,0 +1,163 @@
+#!/bin/bash
+# ╔════════════════════════════════════════════════╗
+# │ Autor: Daniel Calderon - Kapelu                │
+# │ Versión: 3.5                                   │
+# │ Fecha: 16/10/2023 11:56:43                     │
+# │ WebSite: https://danielcalderon.vercel.app/    │
+# ╚════════════════════════════════════════════════╝
+
+#          *************          Ajustes Manuales          *************
+#
+# * user/.local/share/applications/ acceso directo de aplicaciones creados por el usuario en tu directorio personal. 
+# * /usr/share/applications/
+# * sudo nano /etc/sudoers  Agregar ---> Defaults        pwfeedback
+#                                        # User privilege specification
+#                                          root    ALL=(ALL:ALL) ALL
+# 
+#                                        * Los miembros del grupo admin pueden ejecutar el script 
+#                                          /home/daniel-calderon/script/setup.sh 
+#                                          sin que se les solicite una contraseña cuando utilicen el comando sudo.
+#                                        # Members of the admin group may gain root privileges
+#                                        %admin ALL=(ALL) NOPASSWD:/home/daniel-calderon/script/setup.sh
+
+
+
+USUARIO=$(whoami)
+HOSTNAME=$(hostname)
+FECHA=$(date "+%d-%m-%Y")
+HORA=$(date "+%H:%M:%S")
+rojo='\033[32m'
+verde='\033[33m'
+amarillo='\033[34m'
+azul='\033[35m'
+bgris='\033[40m'
+n='\033[1m'
+reset='\033[0m'
+clear
+echo -e ""
+echo -e "$bgris$verde══════════════════════════════════════════════════════════════════$reset"
+echo -e "$bgris                                                                  $reset" 
+echo -e "$bgris                Bienvenido $amarillo$USUARIO                        $reset"
+echo -e "$bgris                                                                  $reset" 
+echo -e "$bgris        Iniciando secuencia Post-Install en $verde$HOSTNAME                $reset"
+echo -e "$bgris                                                                  $reset" 
+echo -e "$bgris           Fecha: $azul$FECHA             Hora: $azul$HORA           $reset"
+echo -e "$bgris                                                                  $reset" 
+echo -e "$bgris$verde══════════════════════════════════════════════════════════════════$reset"
+sleep 8
+clear
+
+# Instala Google Chrome
+wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt-get install -y libappindicator1
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt upgrade -y google-chrome-stable
+sudo rm -f google-chrome-stable_current_amd64.deb
+
+# Desintalar Firefox Mozilla
+sudo apt update -y
+sudo snap remove --purge firefox
+sudo apt remove --autoremove firefox
+sudo apt-get purge firefox -y 
+sudo rm -rf ~/.mozilla
+sudo apt-get update -y
+sudo apt upgrade
+
+# Actualizar y limpiar el sistema
+sudo apt update -y
+sudo apt install snapd
+sudo apt install --fix-missing -y -f
+sudo apt upgrade -y
+sudo apt full-upgrade -y
+sudo apt install -f
+sudo apt autoremove -y
+sudo apt autoclean
+sudo apt -y clean
+
+# Instalación de extensiones
+sudo apt-get install chrome-gnome-shell
+
+# Instalar Node
+sudo snap install curl
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+node -v; npm -v
+sleep 10
+
+# Instala GIT
+sudo add-apt-repository -y ppa:git-core/ppa
+sudo apt install -y git
+
+# Instalar Vscode
+sudo apt-get install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
+sudo apt install apt-transport-https
+sudo apt update
+sudo apt install code
+
+#Instala utilitarios de Sistema
+sudo apt-get install gnome-browser-connector
+sudo add-apt-repository -y ppa:teejee2008/timeshift
+sudo apt-get install -y timeshift
+#sudo apt-get install -y virtualbox
+
+        ## sudo apt
+#sudo apt install -y font-manager
+#sudo apt install -y net-tools
+#sudo apt install -y usb-creator-gtk
+#sudo apt install -y gparted
+        ## sudo snap
+sudo snap install mailspring
+sudo snap install jdownloader2
+sudo snap install vlc
+sudo snap install telegram-desktop
+#sudo snap install libreoffice
+#sudo snap install master-pdf-editor-5
+#sudo snap install zoom-client
+#sudo snap install slack
+#sudo snap install discord
+#sudo snap install inkscape
+
+# Actualizar y limpiar el sistema
+sudo apt update -y
+sudo apt install --fix-missing -y -f 
+sudo apt upgrade -y 
+sudo apt full-upgrade -y 
+sudo apt install -f 
+sudo apt autoremove -y 
+sudo apt autoclean 
+sudo apt -y clean 
+clear
+HORA2=$(date "+%H:%M:%S")
+IFS=: read -ra hms1 <<< "$HORA"
+IFS=: read -ra hms2 <<< "$HORA2"
+segundos_hora1=$((10#${hms1[0]} * 3600 + 10#${hms1[1]} * 60 + 10#${hms1[2]}))
+segundos_hora2=$((10#${hms2[0]} * 3600 + 10#${hms2[1]} * 60 + 10#${hms2[2]}))
+diferencia_segundos=$((segundos_hora2 - segundos_hora1))
+HORAS=$((diferencia_segundos / 3600))
+diferencia_segundos_restantes=$((diferencia_segundos % 3600))
+MINUTOS=$((diferencia_segundos_restantes / 60))
+SEGUNDOS=$((diferencia_segundos_restantes % 60))
+clear
+echo -e ""
+echo -e "$bgris$verde══════════════════════════════════════════════════════════════════$reset"
+echo -e "$bgris                                                                  $reset" 
+echo -e "$bgris                 Felicidades $amarillo$USUARIO                      $reset"  
+echo -e "$bgris                                                                  $reset" 
+echo -e "$bgris     La secuencia Post-Install en $verde$HOSTNAME$reset$bgris fue un ÉXITO             $reset"
+echo -e "$bgris                                                                  $reset" 
+echo -e "$bgris     Fecha: $azul$FECHA                                            $reset"
+echo -e "$bgris                                                                  $reset" 
+echo -e "$bgris         Hora de inicio : $azul$HORA                                $reset"
+echo -e "$bgris         HORA de fin    : $azul$HORA2                                $reset"
+echo -e "$bgris     $verde TIEMPO DE EJECUCIÓN$gris:$n$azul$HORAS:$MINUTOS:$SEGUNDOS                                  $reset"
+echo -e "$bgris                                                                  $reset"
+echo -e "$bgris$verde══════════════════════════════════════════════════════════════════$reset"
+echo -e "$bgris                                                                  $reset" 
+echo -e "$bgris                                                                  $reset" 
+echo -e "$bgris$verde          $n$azul Proceder a crear llaves SSH...                         $reset"
+echo -e "$bgris                                                                  $reset" 
+echo -e ""
