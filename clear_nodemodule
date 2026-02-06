@@ -1,0 +1,139 @@
+#!/bin/bash
+clear
+echo "╔════════════════════════════════════════════════╗"
+echo "│ Autor: Daniel Calderon - Kapelu                │"
+echo "│ Versión: 2.0                                   │"
+echo "│ Fecha: 16/10/2025                              │"
+echo "│ WebSite: https://danielcalderon.vercel.app/    │"
+echo "╚════════════════════════════════════════════════╝"
+# ========================
+# Buscar carpeta Github
+# ========================
+BASE_DIR_NAME="Github"
+CURRENT_DIR="$(pwd)"
+
+while [[ "$CURRENT_DIR" != "/" ]]; do
+  if [[ -d "$CURRENT_DIR/$BASE_DIR_NAME" ]]; then
+    BASE_DIR="$CURRENT_DIR/$BASE_DIR_NAME"
+    break
+  fi
+  CURRENT_DIR="$(dirname "$CURRENT_DIR")"
+done
+
+if [[ -z "$BASE_DIR" ]]; then
+  echo
+  echo
+  echo
+  echo "❌ No se encontró la carpeta '$BASE_DIR_NAME'"
+  exit 1
+fi
+echo
+echo
+echo
+echo "🔍 Escaneando: $BASE_DIR"
+echo
+echo
+echo
+sleep 5
+
+# ========================
+# Archvos y carpetas a elimnar
+# ========================
+TARGET_ITEMS=(
+  ".next"
+  "node_modules"
+  ".container"
+  ".env.local"
+  ".DS_Store"
+  "npm-debug.log"
+)
+
+# ========================
+# Busca TARGET_ITEMS en BASE_DIR
+# ========================
+NAME_ARGS=()
+for item in "${TARGET_ITEMS[@]}"; do
+  NAME_ARGS+=( -name "$item" -o )
+done
+unset 'NAME_ARGS[-1]'
+
+mapfile -t MATCHES < <(
+  find "$BASE_DIR" \
+    \( -type d -o -type f \) \
+    \( "${NAME_ARGS[@]}" \) \
+    -prune
+)
+
+TOTAL=${#MATCHES[@]}
+
+if [[ "$TOTAL" -eq 0 ]]; then
+  clear
+  echo
+  echo
+  echo
+  echo "✅ No se encontraron archivos ni carpetas para borrar"
+  echo
+  sleep 5
+  clear
+  exit 0
+fi
+
+# ========================
+# Listado de elementos a eliminar
+# ========================
+echo
+echo
+echo
+echo "⚠️ Se eliminarán los siguientes $TOTAL elementos:"
+echo "---------------------------------------------"
+for item in "${MATCHES[@]}"; do
+  echo "  • $item"
+done
+echo "---------------------------------------------"
+echo
+
+# ========================
+# Confirmación FINAL
+# ========================
+read -p "🔥 ¿Confirmás el borrado TOTAL? (y/N): " CONFIRM
+echo
+echo
+echo
+
+if [[ ! "$CONFIRM" =~ ^[yY]$ ]]; then
+  echo "❌ Operación cancelada"
+  exit 0
+fi
+
+# ========================
+# Borrado
+# ========================
+echo
+echo
+echo
+echo
+echo "🧨 Eliminando..."
+echo
+
+count=0
+for item in "${MATCHES[@]}"; do
+  rm -rf "$item"
+  ((count++))
+
+  percent=$((count * 100 / TOTAL))
+  filled=$((percent / 2))
+  empty=$((50 - filled))
+
+  printf "\r["
+  printf "%0.s#" $(seq 1 "$filled")
+  printf "%0.s-" $(seq 1 "$empty")
+  printf "] %d%% (%d/%d)" "$percent" "$count" "$TOTAL"
+done
+
+echo
+echo
+echo "✅ Limpieza completa. $TOTAL elementos eliminados."
+echo
+echo
+echo
+sleep 3

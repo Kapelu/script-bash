@@ -1,0 +1,60 @@
+#!/bin/bash
+# ╔════════════════════════════════════════════════╗
+# │ Autor: Daniel Calderon - Kapelu                │
+# │ Versión: 5.0                                   │
+# │ Fecha: 14/08/2025                              │
+# │ WebSite: https://danielcalderon.vercel.app/    │
+# ╚════════════════════════════════════════════════╝
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+source "$SCRIPT_DIR/helpers/colors.sh" || {
+    echo "❌ No se pudo cargar helpers/colors.sh"
+    exit 1
+}
+
+clear
+
+echo -e "${verde}╔════════════════════════════════════════════════╗${reset}"
+echo -e "${verde}│ Autor: Daniel Calderon - Kapelu                │${reset}"
+echo -e "${verde}│ Versión: 5.0                                   │${reset}"
+echo -e "${verde}│ Fecha: 16/10/2025                              │${reset}"
+echo -e "${verde}│ WebSite: https://danielcalderon.vercel.app/    │${reset}"
+echo -e "${verde}╚════════════════════════════════════════════════╝${reset}"
+
+sleep 3
+
+USUARIO=$(whoami)
+HOSTNAME=$(hostname)
+FECHA=$(date "+%d-%m-%Y")
+HORA=$(date "+%H:%M:%S")
+
+show_info_log "Actualizando sistema..."
+show_success_log "Descargando Vscode..."
+
+wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' -O /tmp/code_latest_amd64.deb
+sudo dpkg -i /tmp/code_latest_amd64.deb
+
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt full-upgrade -y
+sudo apt autoremove -y
+sudo apt autoclean -y
+sudo apt clean -y
+
+sleep 3
+
+HORA2=$(date "+%H:%M:%S")
+
+# cálculo de tiempo (OK como lo tenés)
+
+clear
+
+echo -e "$bgris$verde══════════════════════════════════════════════════════════════════$reset"
+echo -e "$bgris                 Felicidades $amarillo$USUARIO                      $reset"
+echo -e "$bgris     La secuencia Clear-System en $verde$HOSTNAME$bgris fue un ÉXITO             $reset"
+echo -e "$bgris     Fecha: $azul$FECHA                                            $reset"
+echo -e "$bgris     Inicio: $azul$HORA  Fin: $azul$HORA2                           $reset"
+echo -e "$bgris     $verde TIEMPO DE EJECUCIÓN:$azul $HORAS:$MINUTOS:$SEGUNDOS        $reset"
+echo -e "$bgris$verde══════════════════════════════════════════════════════════════════$reset"

@@ -1,0 +1,25 @@
+#!/bin/bash
+clear
+echo "╔════════════════════════════════════════════════╗"
+echo "│ Autor: Daniel Calderon - Kapelu                │"
+echo "│ Versión: 2.0                                   │"
+echo "│ Fecha: 20/2/2025                               │"
+echo "│ WebSite: https://danielcalderon.vercel.app/    │"
+echo "╚════════════════════════════════════════════════╝"
+sleep 3
+
+verde='\033[33m'
+amarillo='\033[34m'
+azul='\033[35m'
+reset='\033[0m'
+
+clear
+echo -e "$azul Repositorio a Clonar:$reset \c "
+read repo
+echo ''
+git clone "$repo" --depth 1
+echo ''
+echo ''
+echo -e "$verde Repositorio creado con éxito !!! $reset"
+echo ''
+echo ''

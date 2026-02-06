@@ -1,0 +1,25 @@
+#!/bin/bash
+# ╔════════════════════════════════════════════════╗
+# │ Autor: Daniel Calderon - Kapelu                │
+# │ Versión: 3.5                                   │
+# │ Fecha: 21/01/2024 22:56:43                     │
+# │ WebSite: https://danielcalderon.vercel.app/    │
+# ╚════════════════════════════════════════════════╝
+
+verde='\033[33m'
+amarillo='\033[34m'
+azul='\033[35m'
+reset='\033[0m'
+clear
+echo ''
+echo ''
+echo ''
+echo -e "$azul Nombre del projecto:$reset \c "
+read project
+echo ''
+npx create-next-app@latest $project
+echo ''
+echo -e "$verde Proyecto creado con exito !!! $reset"
+echo -e "$verde     Buen Código Kape...$reset"
+echo ''
+
