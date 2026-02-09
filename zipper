@@ -1,0 +1,102 @@
+#!/bin/bash
+set -e
+
+clear
+echo "╔════════════════════════════════════════════════╗"
+echo "│ Autor: Daniel Calderon - Kapelu                │"
+echo "│ Versión: 2.1                                   │"
+echo "│ Fecha: 16/08/2026                              │"
+echo "│ WebSite: https://danielcalderon.vercel.app/    │"
+echo "╚════════════════════════════════════════════════╝"
+
+# ================= CONFIG =================
+
+DESTINO="/home/daniel-calderon/BackUp"
+LOG="$DESTINO/backup.log"
+FECHA=$(date '+%Y-%m-%d_%H-%M-%S')
+MAX_BACKUPS=5
+
+EXCLUDES=(
+  "*/node_modules/*"
+  "*/.next/*"
+  "*/.git/*"
+  "*/dist/*"
+  "*/build/*"
+  "*.log"
+)
+
+# ================= DEPENDENCIAS =================
+
+for cmd in zip pv du awk sha256sum find; do
+  command -v "$cmd" &>/dev/null || {
+    echo "❌ Falta dependencia: $cmd"
+    exit 1
+  }
+done
+
+# ================= SETUP =================
+
+mkdir -p "$DESTINO"
+touch "$LOG"
+
+log() {
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG"
+}
+
+echo
+echo "========= ZIPPER BACKUP ========="
+
+# ================= INPUT =================
+echo
+read -rp "📁 Ruta a respaldar: " ORIGEN
+[[ ! -d "$ORIGEN" ]] && echo "❌ Ruta inexistente" && exit 1
+echo
+read -rp "📝 Nombre base del backup: " NOMBRE
+[[ -z "$NOMBRE" ]] && echo "❌ Nombre vacío" && exit 1
+
+HASH_DB="$DESTINO/.${NOMBRE}_hash"
+ARCHIVO="$DESTINO/${NOMBRE}_${FECHA}.zip"
+
+# ================= EXCLUSIONES =================
+
+ZIP_EXCLUDES=()
+for e in "${EXCLUDES[@]}"; do
+  ZIP_EXCLUDES+=("-x" "$e")
+done
+
+# ================= DETECCIÓN DE CAMBIOS =================
+
+CURRENT_HASH=$(find "$ORIGEN" -type f \
+  ! -path "*/node_modules/*" \
+  ! -path "*/.next/*" \
+  ! -path "*/.git/*" \
+  -exec sha256sum {} + | sha256sum | awk '{print $1}')
+
+if [[ -f "$HASH_DB" ]] && [[ "$CURRENT_HASH" == "$(cat "$HASH_DB")" ]]; then
+  log "Sin cambios detectados en $ORIGEN. Backup omitido."
+  exit 0
+fi
+
+echo "$CURRENT_HASH" > "$HASH_DB"
+
+# ================= BACKUP =================
+
+TOTAL_BYTES=$(du -sb "$ORIGEN" | awk '{print $1}')
+
+log "Iniciando backup de $ORIGEN"
+log "Archivo destino: $ARCHIVO"
+
+zip -r - "$ORIGEN" "${ZIP_EXCLUDES[@]}" 2>/dev/null \
+| pv -p -e -r -a -b \
+> "$ARCHIVO"
+echo
+log "✅ Backup creado correctamente"
+
+# ================= ROTACIÓN =================
+
+ls -1t "$DESTINO"/*.zip 2>/dev/null | tail -n +$((MAX_BACKUPS + 1)) | while read -r viejo; do
+  rm -f "$viejo"
+  log "🧹 Rotación: eliminado $(basename "$viejo")"
+done
+echo
+echo "✅ Proceso finalizado"
